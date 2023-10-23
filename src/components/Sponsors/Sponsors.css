@@ -1,0 +1,58 @@
+.main-marquee-container{
+  width: 1728px;
+  margin: 0 auto 6rem;
+}
+
+.marquee-title{
+  text-align: center;
+  margin: 8rem auto 2rem;
+}
+
+.marquee-container{
+  width: 100%;
+}
+
+.marquee-1 {
+  width: 16em;
+  margin: 0 2rem;
+}
+
+.marquee-2 {
+  width: 16rem;
+  margin: 0 2rem;
+}
+
+.marquee-3 {
+  width: 19rem;
+  margin: 0 2rem;
+}
+
+.marquee-4 {
+  width: 15rem;
+  margin: 0 2rem;
+}
+
+.marquee-5 {
+  width: 10rem;
+  margin: 0 2rem;
+}
+
+.marquee-6 {
+  width: 8rem;
+  margin: 0 0 0 4rem;
+}
+
+.marquee-7 {
+  width: 15rem;
+  margin: 0 1rem 0 4rem;
+}
+
+.marquee-8 {
+  width: 25rem;
+  margin: 0 2rem;
+}
+
+.marquee-container img{
+  width: 100%;
+}
+

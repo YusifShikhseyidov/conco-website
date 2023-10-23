@@ -1,0 +1,82 @@
+.contact-page{
+  margin-bottom: 8rem;
+}
+
+.contact-page h1{
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: uppercase;
+}
+
+.contact-details{
+  display: flex;
+  width: 70rem;
+  margin: 3rem auto 5rem;
+}
+
+.contact-details span{
+  font-size: 17px;
+}
+
+.contact-phone-container{
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-phone-container a{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contact-phone-container a .phone-icon-wrapper{
+  height: 21px;
+}
+
+.phone-icon-wrapper svg{
+  fill: #c7aa55;
+  margin-top: 2px;
+}
+
+.contact-email-container{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-email-container a{
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+.contact-email-container a .email-icon-wrapper{
+  height: 21px;
+}
+
+.email-icon-wrapper svg{
+  stroke: #c7aa55;
+}
+
+.address-on-map{
+  width: fit-content;
+  margin: 0 auto; 
+}
+
+.address-on-map .text-address{
+  display: flex;
+}
+
+.address-on-map .text-address svg{
+  margin: 2rem 1rem 2rem 0;
+}
+
+.address-on-map .text-address svg path{
+  stroke: #c7aa55;
+}
+
+.address-on-map .text-address p{
+  margin: 2rem 0 2rem;
+}

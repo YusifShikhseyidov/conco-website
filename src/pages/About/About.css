@@ -1,0 +1,121 @@
+.about-page{
+  min-height: auto;
+  margin-bottom: 5rem;
+  /* background-color: antiquewhite; */
+}
+
+.about-page_section-1{
+  padding: 3rem 0 0;  
+}
+
+.about-page h1{
+  margin: 0 0 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-page hr{
+  border: 1px solid rgba(170, 170, 170, 0.24);
+  margin: 4rem 0;
+}
+
+.about-page_section-1 .about-page_about-conco{
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: large;
+}
+
+.about-page_section-2 .about-page_main-services{
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.about-page_section-2 .about-page_main-services .service-container{
+  width: 12rem;
+  height: 18rem;
+}
+
+.service-container .service-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.service-container .service-logo-container img{
+  transition: all 0.4s;
+}
+
+.service-container:hover .service-logo-container img{
+  transform: scale(1.1);
+}
+
+
+
+.service-container .service-name-container{
+  background-color: #c7aa55;
+  height: 8rem;
+  display: grid;
+  place-content: center;
+  font-size: 18px;
+  text-align: center;
+}
+
+.service-container .service-name-container h3{
+  cursor: default;
+}
+
+.about-page_section-3{
+  margin-top: 5rem;
+}
+
+.about-page_section-3 .flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 4rem;
+  background-color: #000;
+  color: #fff;
+  padding: 7rem 0;
+}
+
+.about-page_section-3 .text-container{
+  min-width: 435px;
+  max-height: 420px;
+  padding: 75px 4rem 0 0;
+  text-align: end;
+}
+
+.about-page_section-3 .text-container h1{
+  color: #c7aa55;
+  text-align: end;
+}
+
+.about-page_section-3 .images-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about-page_section-3 .text-container p{
+  width: 600px;
+  font-size: large;
+}
+
+
+.about-page_section-3 .images-container .qualityAssuranceImage-container{
+  width: 200px;
+  height: 200px;
+}
+
+.about-page_section-3 .images-container .qualityAssuranceImage-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.about-page_section-4{
+  margin: 5rem 0;
+}
