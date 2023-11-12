@@ -54,9 +54,8 @@
 }
 
 
-
 .service-container .service-name-container{
-  background-color: #c7aa55;
+  background-color: #FFC533;
   height: 8rem;
   display: grid;
   place-content: center;
@@ -90,7 +89,7 @@
 }
 
 .about-page_section-3 .text-container h1{
-  color: #c7aa55;
+  color: #FFC533;
   text-align: end;
 }
 

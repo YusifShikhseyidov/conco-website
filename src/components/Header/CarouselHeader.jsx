@@ -21,7 +21,7 @@ export default function CarouselHeader() {
       <Swiper
         className="slides-container"
         modules={[Navigation, Pagination, Autoplay]}
-        speed={2000}
+        speed={1000}
         navigation
         pagination={{ clickable: true }}
         loop={true}

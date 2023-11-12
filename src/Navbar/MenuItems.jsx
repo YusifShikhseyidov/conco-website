@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import Dropdown from "./Dropdown";
 import "./Navbar.css";
+import {IoIosArrowDown} from "react-icons/io"
 
 export default function MenuItems({ navigationLinks, depthLevel }) {
   // creating a state for dropdown links
@@ -21,13 +21,6 @@ export default function MenuItems({ navigationLinks, depthLevel }) {
     }
   }, [open])
 
-  // const menuRef = useRef();
-  
-  // window.addEventListener('click', (e)=>{
-  //   if(e.target !== menuRef.current){
-  //     setOpen(!open)
-  //   }
-  // })
 
   // function onMouseEnter(){
   //   setDropdown(true)
@@ -36,11 +29,6 @@ export default function MenuItems({ navigationLinks, depthLevel }) {
   // function onMouseLeave(){
   //   setDropdown(false)
   // }
-  // window.addEventListener('click', (e)=>{
-  //   if(e.target !== dropdownRef.current){
-  //     setDropdown(!drop)
-  //   }
-  // })
 
   return (
     <li
@@ -52,26 +40,14 @@ export default function MenuItems({ navigationLinks, depthLevel }) {
       {navigationLinks.subLinks ? (
         <div className="dropdowm">
           <button
+            className={open ? "isActive" : ""}
             type="button"
             aria-haspopup="menu"
             aria-expanded={open ? "true" : "false"}
             onClick={() => setOpen(!open)}
           >
-            {navigationLinks.title}
-            {!open ? (
-              <ion-icon name="chevron-down-outline"></ion-icon>
-            ) : (
-              <ion-icon name="chevron-up-outline"></ion-icon>
-            )}
+            {navigationLinks.title} <IoIosArrowDown className={open ? "menuIsActivated" : "menuIsDeactivated"}/>
 
-            {/* {!dropdown && (
-              <div className="dropdown-icon">
-                <span></span>
-                <span></span>
-              </div>
-            ) } */}
-
-            {/* {depthLevel >= 0 && <span className="arrow"/>} */}
           </button>
           {open && (
             <div className="dropdown-nav-subelements">
@@ -87,11 +63,6 @@ export default function MenuItems({ navigationLinks, depthLevel }) {
               </ul>
             </div>
           )}
-          {/* <Dropdown
-            sublinks={navigationLinks.subLinks}
-            dropdown={dropdown}
-            depthLevel={depthLevel}
-          /> */}
         </div>
       ) : (
         // otherwise just a navbar link

@@ -17,7 +17,7 @@ export default function Sponsors() {
         <h1 className="marquee-title">Sifarişçilər</h1>
 
       <div className="marquee-container">
-        <Marquee speed={100} gradient={true} gradientWidth={600}>
+        <Marquee speed={100} gradient={true} gradientWidth={600} pauseOnHover={true}>
           
             <div className="marquee-1">
               <img src={img1} alt='sifarisci1' />

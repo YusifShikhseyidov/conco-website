@@ -6,11 +6,12 @@ export default function ErrorPage() {
   const error = useRouteError()
   console.error(error)
 
+
   return (
     <div className="error-page">
       <div className="error-page-content">
         <div>
-          <p><b>{error.statusText || errormessage}</b></p>
+          <p><b>{error.statusText}</b></p>
           
           <p><b>Sorry, such a page doesn't exist</b></p>
         </div>

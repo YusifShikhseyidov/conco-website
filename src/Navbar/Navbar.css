@@ -1,7 +1,7 @@
 .navbar-container {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   color: #212529;
-  background-color: beige;
+  background-color: #FFC533;
 }
 
 .nav-area {
@@ -45,6 +45,11 @@
   width: 100%;
 }
 
+.menu-items button.isActive{
+  background-color: #E67F0D;
+  border-radius: 4px;
+}
+
 
 .menu-items > a,
 .menu-items button {
@@ -55,18 +60,32 @@
 .menu-items a:hover,
 .menu-items button:hover,
 .menu-items .active {
-  background-color: #c7aa55;
+  background-color: #E67F0D;
   border-radius: 4px;
 }
 
 .dropdown-nav-subelements{
-  background-color: beige;
-  padding: 4px;
+  background-color: #FFC533;
+  padding: 4px 0;
   min-width: 14rem;
   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08), 0 4px 6px -2px rgba(71, 63, 79, 0.16);
+  border: 1px solid black;
   position: absolute;
-  top: 3.07rem;
+  top: 4.07rem;
   z-index: 10;
+}
+
+.dropdown-nav-subelements::before{
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 6px;
+  border: 1px solid black;
+  transform: rotate(45deg);
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffc533;
+  z-index: 8;
 }
 
 .dropdown-nav-subelements a{
@@ -74,25 +93,33 @@
   font-size: large;
 }
 
-
-/* Try to apply this animation to navbar arrow later */
-/* .menu-items button:hover ion-icon{
-  animation: arrowIconRotation 0.5s both;
+.dropdown-nav-subelements a:hover{
+  background-color:  #ffefbab7; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0;
 }
 
-@keyframes arrowIconRotation {
-  from{
-    transform: rotate(180deg);
-  }
-  
-  to{
-    transform: rotate(0deg);
-  }
-} */
 
 
 
-.dropdown.show {
+/* dropdown button arrow styling */
+
+.menuIsActivated {
+  margin-top: 2.5px;
+  margin-left: 5px;
+  transform: rotate(-180deg);
+  transition: 0.2s;
+}
+
+.menuIsDeactivated {
+  margin-top: 2.5px;
+  margin-left: 5px;
+  transform: rotate(0);
+  transition: 0.2s;
+}
+
+
+
+/* .dropdown.show {
   display: block;
 }
 
@@ -100,11 +127,11 @@
   position: absolute;
   left: 100%;
   top: -7px;
-}
+} */
 
 /* content */
 
-.content {
+/* .content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 20px;
@@ -117,4 +144,4 @@
 .content a {
   color: #cc3852;
   margin-right: 10px;
-}
+} */

@@ -27,11 +27,19 @@
   background-color: rgb(0, 0, 0);
 }
 
+.fp-page-text-btn-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -140px;
+}
+
 .fp-page-text-wrapper {
-  width: 50%;
+  width: 70%;
   font-size: 30px;
   font-weight: 700;
-  padding-right: 10rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -39,13 +47,13 @@
 
 .fp-page .fp-page-images-wrapper {
   position: relative;
-  width: 50%;
+  flex: 1;
 }
 
 .fp-page .fp-page-images-wrapper img:nth-child(1) {
   position: absolute;
   top: 136px;
-  left: -100px;
+  left: -30px;
   width: 500px;
   height: 325px;
   border: 7px solid #ca8c3a;
@@ -84,11 +92,18 @@
   background-color: rgb(0, 0, 0);
 }
 
+.fp-page-text-btn-container2{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .fp-page-text-wrapper2 {
   width: 50%;
   font-size: 30px;
   font-weight: 700;
-  padding-left: 10rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -96,7 +111,7 @@
 
 .fp-page .fp-page-images-wrapper2 {
   position: relative;
-  width: 50%;
+  flex: 1;
 }
 
 .fp-page .fp-page-images-wrapper2 img:nth-child(1) {
@@ -141,8 +156,17 @@
   background-color: rgb(0, 0, 0);
 }
 
-.fp-page-text-wrapper3-container {
-  width: 50%;
+.fp-page-text-btn-container3{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -140px;
+}
+
+.fp-page-text-wrapper3 {
+  width: 60%;
   font-size: 30px;
   font-weight: 700;
   display: flex;
@@ -151,19 +175,15 @@
   text-align: center;
 }
 
-.fp-page-text-wrapper3 {
-  width: 75%;
-}
-
 .fp-page .fp-page-images-wrapper3 {
   position: relative;
-  width: 50%;
+  flex: 1;
 }
 
 .fp-page .fp-page-images-wrapper3 img:nth-child(1) {
   position: absolute;
   top: 136px;
-  left: -65px;
+  left: -35px;
   width: 500px;
   height: 325px;
   border: 7px solid #ca8c3a;
@@ -175,7 +195,7 @@
 .fp-page .fp-page-images-wrapper3 img:nth-child(2) {
   position: absolute;
   top: -35px;
-  right: 39px;
+  right: 40px;
   width: 500px;
   height: 325px;
   border: 7px solid #ca8c3a;
@@ -186,7 +206,7 @@
 .fp-page .fp-page-images-wrapper3 img:nth-child(3) {
   position: absolute;
   bottom: -45px;
-  right: 70px;
+  right: 40px;
   width: 500px;
   height: 325px;
   border: 7px solid #ca8c3a;
@@ -197,4 +217,70 @@
 /* fp-page footer style */
 .fp-page-footer p {
   margin: 0 0 3rem 2rem;
+}
+
+/* show more btn and content styles */
+.btn-more {
+  width: fit-content;
+  appearance: none;
+  background-color: #ffc533;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.btn-more:before {
+  backface-visibility: hidden;
+  background-color: #ffffff36;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.btn-more:hover:before {
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.btn-more span {
+  position: relative;
+}
+
+
+.imgs-box{
+  display: flex;
+  width: 100%;
+  height: 600px;
+  margin: -10rem 0 5rem;
+  background-color: rgb(0, 0, 0);
 }
