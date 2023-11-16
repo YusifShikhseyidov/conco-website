@@ -15,7 +15,6 @@ import images from "./images";
 
 
 export default function CarouselHeader() {
-  console.log(images);
   return (
     <div className="container">
       <Swiper

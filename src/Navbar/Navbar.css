@@ -73,19 +73,19 @@
   position: absolute;
   top: 4.07rem;
   z-index: 10;
+	animation: slide-bottom 0.5s ease-in-out both;
 }
 
-.dropdown-nav-subelements::before{
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 6px;
-  border: 1px solid black;
-  transform: rotate(45deg);
-  width: 2rem;
-  height: 2rem;
-  background-color: #ffc533;
-  z-index: 8;
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .dropdown-nav-subelements a{
