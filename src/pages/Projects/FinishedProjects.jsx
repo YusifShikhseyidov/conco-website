@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projectImage1, projectImage2, projectImage3 } from "./projectsImages";
+import { projectImage1, projectImage2, projectImage3, projectImage4, projectImage5, projectImage6, projectImage7 } from "./projectsImages";
 // U can use react-spring library for smooth transition appear and diisappear of the divs for extra photos example of which is at codesandbox.io
 
 export default function FinishedProjects() {
@@ -32,14 +32,13 @@ export default function FinishedProjects() {
         </section>
         {/* this is a test */}
         {toggle && (
-          <div className="imgs-box"></div>
+          <div className="fp-page-imgs-box"></div>
         )}
 
         <section className="main-container2">
           <div className="fp-page-images-wrapper2">
-            <img src={projectImage1} alt="xezer-bine-school" />
-            <img src={projectImage2} alt="xezer-bine-school" />
-            <img src={projectImage3} alt="xezer-bine-school" />
+            <img src={projectImage4} alt="shaki-baltali-village-school" />
+            <img src={projectImage5} alt="shaki-baltali-village-school" />
           </div>
 
           <div className="fp-page-text-btn-container2">
@@ -52,7 +51,7 @@ export default function FinishedProjects() {
         </section>
         {/* this is a test */}
         {toggle1 && (
-          <div className="imgs-box"></div>
+          <div className="fp-page-imgs-box"></div>
         )}
 
         <section className="main-container3">
@@ -67,14 +66,14 @@ export default function FinishedProjects() {
           </div>
 
           <div className="fp-page-images-wrapper3">
-            <img src={projectImage1} alt="xezer-bine-school" />
-            <img src={projectImage2} alt="xezer-bine-school" />
-            <img src={projectImage3} alt="xezer-bine-school" />
+            <img src={projectImage6} alt="yasamal-living-complexes" />
+            <img src={projectImage7} alt="yasamal-living-complexes" />
+            <img src={projectImage7} alt="yasamal-living-complexes" />
           </div>
         </section>
         {/* this is a test */}
         {toggle2 && (
-          <div className="imgs-box"></div>
+          <div className="fp-page-imgs-box"></div>
         )}
       </main>
       <footer className="fp-page-footer">

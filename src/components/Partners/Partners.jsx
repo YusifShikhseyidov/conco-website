@@ -1,46 +1,25 @@
+import Partner from "./Partner";
 import "./Partners.css";
-import Fade from "react-reveal/Fade";
 import maxi from "./assets/maxiaz.png";
+const imageUrl = "https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60";
 
 export default function Partners() {
   return (
     <div className="main-partners-container">
       <h1>Tərəfdaşlarımız</h1>
+      
+      <div className="partners-grid">
+        <Partner imageUrl={imageUrl} />
+        <div className="test"></div>
+        <Partner imageUrl={imageUrl} />
+        <div className="test1"></div>
+        <Partner imageUrl={imageUrl} />
+        <div className="test2"></div>
+        <Partner imageUrl={imageUrl} />
+        <Partner imageUrl={imageUrl} />
+        <Partner imageUrl={imageUrl} />
+      </div>
 
-      <div className="main-partners-contaner_first-partner">
-        <div className="left-part">
-          <Fade left>
-            <img width={500} height={500} src={maxi} alt="maxi.az" />
-          </Fade>
-        </div>
-        <div className="right-part">
-          <Fade right>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus,
-              reprehenderit earum odio sit laudantium asperiores officiis
-              consectetur neque nostrum laborum modi aspernatur? Soluta dolorum
-              repellendus, qui minus aperiam quisquam sunt!
-            </p>
-          </Fade>
-        </div>
-      </div>
-      <div className="main-partners-contaner_second-partner">
-        <div className="left-part">
-          <Fade left>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus,
-              reprehenderit earum odio sit laudantium asperiores officiis
-              consectetur neque nostrum laborum modi aspernatur? Soluta dolorum
-              repellendus, qui minus aperiam quisquam sunt!
-            </p>
-          </Fade>
-        </div>
-        <div className="right-part">
-          <Fade right>
-            <img width={500} height={500} src={maxi} alt="maxi.az" />
-          </Fade>
-        </div>
-      </div>
     </div>
   );
 }
