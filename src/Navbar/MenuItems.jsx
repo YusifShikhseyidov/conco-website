@@ -56,7 +56,7 @@ export default function MenuItems({ navigationLinks, depthLevel }) {
                   navigationLinks.subLinks.map((subLinkItem, index) => (
                     <li key={index} onClick={()=> setOpen(!open)}>
                       <NavLink to={subLinkItem.url}>
-                        {subLinkItem.title}
+                        <span className="text">{subLinkItem.title}</span>
                       </NavLink>
                     </li>
                   ))}

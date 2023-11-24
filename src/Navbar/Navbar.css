@@ -1,14 +1,14 @@
 .navbar-container {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  color: #212529;
-  background-color: #FFC533;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .nav-area {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .menu-items button.isActive{
-  background-color: #E67F0D;
+  background-color: #FFC533;
   border-radius: 4px;
 }
 
@@ -60,20 +60,21 @@
 .menu-items a:hover,
 .menu-items button:hover,
 .menu-items .active {
-  background-color: #E67F0D;
+  background-color: #FFC533;
   border-radius: 4px;
 }
 
 .dropdown-nav-subelements{
-  background-color: #FFC533;
+  background-color: #000000;
   padding: 4px 0;
   min-width: 14rem;
   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08), 0 4px 6px -2px rgba(71, 63, 79, 0.16);
-  border: 1px solid black;
+  border-top: 2px solid #FFC533;
+  border-bottom: 2px solid #FFC533;
   position: absolute;
   top: 4.07rem;
   z-index: 10;
-	animation: slide-bottom 0.5s ease-in-out both;
+	animation: slide-bottom 0.2s ease-in-out both;
 }
 
 
@@ -94,11 +95,9 @@
 }
 
 .dropdown-nav-subelements a:hover{
-  background-color:  #ffefbab7; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color:  #FFC533; 
   border-radius: 0;
 }
-
-
 
 
 /* dropdown button arrow styling */

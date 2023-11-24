@@ -8,6 +8,7 @@ import {
   projectImage13,
 } from "./projectsImages";
 import Fade from "react-reveal/Fade"
+import Footer from "../../components/Footer/Footer";
 
 export default function OngoingProjects() {
   const [toggle, setToggle] = useState(false);
@@ -49,60 +50,66 @@ export default function OngoingProjects() {
         {toggle && <div className="op-page-imgs-box"></div>}
 
         <section className="main-container2">
-          <div className="op-page-images-wrapper2">
-            <img src={projectImage11} alt="shaki-baltali-village-school" />
-            <img src={projectImage12} alt="shaki-baltali-village-school" />
-            <img src={projectImage13} alt="shaki-baltali-village-school" />
-          </div>
+          <Fade left>
+            <div className="op-page-images-wrapper2">
+              <img src={projectImage11} alt="shaki-baltali-village-school" />
+              <img src={projectImage12} alt="shaki-baltali-village-school" />
+              <img src={projectImage13} alt="shaki-baltali-village-school" />
+            </div>
+          </Fade>
 
-          <div className="op-page-text-btn-container2">
-            <p className="op-page-text-wrapper2">
-              Bakı şəhəri, Suraxanı rayonu, Hövsan qəsəbəsinin 23,25 ha
-              ərazisində MIDA yaşayış kompleksi tərkibində olan 4 ədəd
-              9-mərtəbəli və 2 ədəd 12-mərtəbəli yeni yaşayış binaların inşası
-            </p>
-            {/* this is a test */}
-            <button
-              className="btn-more"
-              role="button"
-              onClick={() => setToggle1(!toggle1)}
-            >
-              Layihəyə aid daha çox məlumat üçün klikləyin
-            </button>
-          </div>
+          <Fade right>
+            <div className="op-page-text-btn-container2">
+              <p className="op-page-text-wrapper2">
+                Bakı şəhəri, Suraxanı rayonu, Hövsan qəsəbəsinin 23,25 ha
+                ərazisində MIDA yaşayış kompleksi tərkibində olan 4 ədəd
+                9-mərtəbəli və 2 ədəd 12-mərtəbəli yeni yaşayış binaların inşası
+              </p>
+              {/* this is a test */}
+              <button
+                className="btn-more"
+                role="button"
+                onClick={() => setToggle1(!toggle1)}
+              >
+                Layihəyə aid daha çox məlumat üçün klikləyin
+              </button>
+            </div>
+          </Fade>
         </section>
         {/* this is a test */}
         {toggle1 && <div className="op-page-imgs-box"></div>}
 
         <section className="main-container3">
-          <div className="op-page-text-btn-container3">
-            <p className="op-page-text-wrapper3">
-              “MİDA” MMC-nin sifarişi ilə Sumqayıt şəhəri, M.Hüseynzadə adına
-              şəhər stadionunun şimal şərqində çoxmənzilli yaşayış binaların
-              tikintisi
-            </p>
-            {/* this is a test */}
-            <button
-              className="btn-more"
-              role="button"
-              onClick={() => setToggle2(!toggle2)}
-            >
-              Layihəyə aid daha çox məlumat üçün klikləyin
-            </button>
-          </div>
+          <Fade left>
+            <div className="op-page-text-btn-container3">
+              <p className="op-page-text-wrapper3">
+                “MİDA” MMC-nin sifarişi ilə Sumqayıt şəhəri, M.Hüseynzadə adına
+                şəhər stadionunun şimal şərqində çoxmənzilli yaşayış binaların
+                tikintisi
+              </p>
+              {/* this is a test */}
+              <button
+                className="btn-more"
+                role="button"
+                onClick={() => setToggle2(!toggle2)}
+              >
+                Layihəyə aid daha çox məlumat üçün klikləyin
+              </button>
+            </div>
+          </Fade>
 
-          <div className="op-page-images-wrapper3">
-            <img src={projectImage8} alt="yasamal-living-complexes" />
-            <img src={projectImage9} alt="yasamal-living-complexes" />
-            <img src={projectImage10} alt="yasamal-living-complexes" />
-          </div>
+          <Fade right>
+            <div className="op-page-images-wrapper3">
+              <img src={projectImage8} alt="yasamal-living-complexes" />
+              <img src={projectImage9} alt="yasamal-living-complexes" />
+              <img src={projectImage10} alt="yasamal-living-complexes" />
+            </div>
+          </Fade>
         </section>
         {/* this is a test */}
         {toggle2 && <div className="op-page-imgs-box"></div>}
       </main>
-      <footer className="op-page-footer">
-        <p>CONCO CONSTRUCTION QSC</p>
-      </footer>
+      <Footer/>
     </>
   );
 }

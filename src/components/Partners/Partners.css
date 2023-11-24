@@ -1,5 +1,5 @@
 .main-partners-container {
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
 }
 
 .main-partners-container > h1 {
@@ -14,17 +14,17 @@
   grid-template-columns: repeat(3, 300px);
   place-content: center;
   gap: 55px;
-  background: rgb(255, 197, 51);
+  background: rgb(255, 205, 78);
   background: linear-gradient(
     90deg,
-    rgba(255, 197, 51, 1) 0%,
-    rgba(255, 229, 163, 1) 0%,
-    rgba(255, 249, 232, 1) 17%,
-    rgba(255, 255, 255, 1) 33%,
-    rgba(255, 253, 247, 1) 62%,
-    rgba(255, 243, 211, 1) 95%,
-    rgba(255, 232, 174, 1) 100%,
-    rgba(255, 197, 51, 1) 100%
+    rgba(255, 205, 78, 1) 2%,
+    rgba(255, 218, 127, 1) 17%,
+    rgba(255, 231, 171, 1) 35%,
+    rgba(255, 255, 255, 1) 47%,
+    rgba(255, 255, 255, 1) 53%,
+    rgba(255, 231, 171, 1) 65%,
+    rgba(255, 218, 127, 1) 86%,
+    rgba(255, 205, 78, 1) 98%
   );
 }
 

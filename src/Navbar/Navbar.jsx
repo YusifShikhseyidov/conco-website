@@ -1,7 +1,7 @@
 import { Link, Outlet } from 'react-router-dom'
 import {navLinks} from './navLinks'
 import MenuItems from './MenuItems'
-import conco_logo from './conco-logo.png'
+import conco_logo from './concoLogo.png'
 import './Navbar.css'
 import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs'
 
