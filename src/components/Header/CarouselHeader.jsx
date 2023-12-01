@@ -10,8 +10,11 @@ import "swiper/css/effect-coverflow";
 // import your styles
 import "./CarouselHeader.css";
 
+
 // import swiper-carousel images
 import images from "./images";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 
 export default function CarouselHeader() {
@@ -32,6 +35,7 @@ export default function CarouselHeader() {
           </SwiperSlide>
         ))}
       </Swiper>
+        <a href="#scrollHere" className="go-down-arrow"><MdKeyboardArrowDown /></a>
     </div>
   );
 }

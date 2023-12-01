@@ -8,6 +8,7 @@ import "./About.css";
 import Accordion from '../../components/Accordion/Acccordion'
 
 import Footer from "../../components/Footer/Footer";
+import { Flip } from "react-reveal";
 
 function About() {
   return (
@@ -32,15 +33,17 @@ function About() {
 
         <div className="about-page_main-services">
           {services.map((service) => (
-            <div className="service-container" key={service.alt}>
-              <div className="service-logo-container">
-                <img src={service.href} alt={service.alt} />
-              </div>
+            <Flip key={service.alt} left>
+              <div className="service-container">
+                <div className="service-logo-container">
+                  <img src={service.href} alt={service.alt} />
+                </div>
 
-              <div className="service-name-container">
-                <h3>{service.name}</h3>
+                <div className="service-name-container">
+                  <h3>{service.name}</h3>
+                </div>
               </div>
-            </div>
+            </Flip>
           ))}
         </div>
       </section>

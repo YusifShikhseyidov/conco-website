@@ -12,6 +12,8 @@ export default function Breadcrumbs() {
   const crumbs = location.pathname.split('/').filter(crumb=> crumb !== '').map((crumb, index) => {
     currentLink += `/${crumb}`
 
+    
+
     if(index !== 0){
       return (
         <div className="crumb" key={crumb}>
@@ -28,7 +30,7 @@ export default function Breadcrumbs() {
   })
 
   return (
-    <div className="breadcrumbs">
+    <div className={`breadcrumbs ${location.pathname==='/' ? 'dontShowBreadcrumbOnHomePage' : ''}`}>
       {crumbs}
     </div>
   )

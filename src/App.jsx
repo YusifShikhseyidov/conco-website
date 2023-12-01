@@ -8,6 +8,7 @@ import FinishedProjects from './pages/Projects/FinishedProjects';
 import OngoingProjects from './pages/Projects/OngoingProjects';
 import RestorationProjects from './pages/Projects/RestorationProjects';
 import ErrorPage from './pages/Error/ErrorPage';
+import Careers from './pages/Careers/Careers';
 
 
 const router = createBrowserRouter(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
         <Route path='/projects/ongoing-projects' element={<OngoingProjects/>}/>
         <Route path='/projects/restoration-projects' element={<RestorationProjects/>} />
       </Route>
+      <Route path="careers" element={<Careers/>} />
       <Route path="contact" element={<Contact/>} />
     </Route>
   )

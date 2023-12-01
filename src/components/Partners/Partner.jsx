@@ -1,14 +1,12 @@
-export default function Partner({imageUrl}) {
+export default function Partner({ imageUrl }) {
+
   return (
     <div className="flip-card-container">
       <div className="flip-card">
         <div className="card-front">
           <figure>
             <div className="img-bg"></div>
-            <img
-              src={imageUrl}
-              alt="lake"
-            />
+            <img src={imageUrl} alt="lake" />
 
             <figcaption>Maxi.az</figcaption>
 

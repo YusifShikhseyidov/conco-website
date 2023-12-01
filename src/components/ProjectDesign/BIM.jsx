@@ -1,3 +1,4 @@
+import { Bounce } from "react-reveal";
 import design1 from "./assets/bim-technology0(transparent).jpg";
 import design2 from "./assets/bim-technology1(transparent).jpg";
 import design3 from "./assets/yevlax-qoyunbinesi-mekteb.jpg";
@@ -33,15 +34,21 @@ export default function BIM() {
           </div>
 
           <div className="designimgs-container">
-            <img src={design1} alt="BIM-Layihelendirme" />
-            <img src={design2} alt="BIM-Layihelendirme" />
+            <Bounce right duration={1000}>
+              <img src={design1} alt="BIM-Layihelendirme" />
+            </Bounce>
+            <Bounce right duration={2000}>
+              <img src={design2} alt="BIM-Layihelendirme" />
+            </Bounce>
           </div>
         </div>
 
         <div className="text-designimgs-container-1">
-          <div className="designimgs-container-1">
-            <img src={design3} alt="BIM-Layihelendirme" />
-          </div>
+          <Bounce>
+            <div className="designimgs-container-1">
+              <img src={design3} alt="BIM-Layihelendirme" />
+            </div>
+          </Bounce>
 
           <div>
             <p>

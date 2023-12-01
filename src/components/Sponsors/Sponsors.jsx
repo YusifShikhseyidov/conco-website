@@ -12,7 +12,7 @@ import './Sponsors.css'
 
 export default function Sponsors() {
   return (
-    <div className="main-marquee-container">
+    <div className="main-marquee-container" id="scrollHere">
       
         <h1 className="marquee-title">Sifarişçilər</h1>
 

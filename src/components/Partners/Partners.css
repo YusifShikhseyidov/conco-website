@@ -8,24 +8,22 @@
 }
 
 .partners-grid {
-  height: 730px;
+  height: 900px;
   position: relative;
+  overflow: hidden;
+  background-color: #f1f4f5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23c8cbcc' fill-opacity='0.14'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.14'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.partners-grid-inside-box{
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  place-content: center;
+  grid-template-rows: repeat(2, 300px);
   gap: 55px;
-  background: rgb(255, 205, 78);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 205, 78, 1) 2%,
-    rgba(255, 218, 127, 1) 17%,
-    rgba(255, 231, 171, 1) 35%,
-    rgba(255, 255, 255, 1) 47%,
-    rgba(255, 255, 255, 1) 53%,
-    rgba(255, 231, 171, 1) 65%,
-    rgba(255, 218, 127, 1) 86%,
-    rgba(255, 205, 78, 1) 98%
-  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -60%;
 }
 
 .flip-card-container {
@@ -38,13 +36,11 @@
 
   width: 300px;
   height: 300px;
-  /* margin: 40px; */
 }
 
 .flip-card {
   width: inherit;
   height: inherit;
-
   position: relative;
 }
 
@@ -64,11 +60,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.card-front {
   z-index: 2;
 }
+
+
 
 figure {
   position: absolute;
@@ -81,9 +76,9 @@ figure {
 
 .img-bg {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-
+  transform: translateY(-100%);
   width: 100%;
   height: 0;
   transition: 1s;
@@ -97,18 +92,16 @@ figure {
   position: absolute;
   top: 50%;
   left: 0;
-
   width: 100%;
-  height: 50%;
-  transform: translateY(100%);
+  height: 0;
   transition: 1s;
 }
 
 .card-front:hover .img-bg1 {
-  transform: translateY(0%);
+  height: 50%;
 }
 
-.card-front > img {
+.card-front img {
   height: 100%;
   width: 100%;
   border-radius: 24px;
@@ -248,32 +241,35 @@ figcaption {
 }
 
 .partners-grid .test {
-  border: 5px solid #ffc533;
+  border: 0px;
   border-radius: 52% 48% 40% 60% / 48% 48% 52% 52%;
-  width: 10px;
+  width: 15px;
   height: 700px;
   position: absolute;
-  top: 2%;
-  left: 40.5%;
+  top: -3%;
+  left: 31.7%;
+  background-color: #ffc533;
 }
 
 .partners-grid .test1 {
-  border: 5px solid #ffc533;
+  border: 0px;
   border-radius: 52% 48% 40% 60% / 48% 48% 52% 52%;
-  width: 10px;
+  width: 15px;
   height: 700px;
   position: absolute;
-  top: 2%;
-  left: 59.1%;
+  bottom: -4%;
+  left: 67.1%;
+  background-color: #ffc533;
 }
 
 .partners-grid .test2 {
-  border: 5px solid #ffc533;
+  border: 0px;
   border-radius: 52% 48% 40% 60% / 48% 48% 52% 52%;
-  width: 10px;
+  width: 15px;
   height: 1100px;
   rotate: 90deg;
   position: absolute;
   left: 49.4%;
-  top: -25%;
+  top: -33.8%;
+  background-color: #ffc533;
 }

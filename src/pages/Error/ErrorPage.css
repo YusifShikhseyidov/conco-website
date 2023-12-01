@@ -23,8 +23,8 @@
 
 .error-page-content > div:nth-child(1){
   position: absolute;
-  top: 40%;
-  left: 41%;
+  top: 30%;
+  left: 38%;
 }
 
 .error-page-content > div:nth-child(1) p:first-child{
@@ -33,7 +33,7 @@
 
 .error-page-content > div:nth-child(2){
   position: absolute;
-  top: 52%;
+  top: 38%;
   left: 44%;
   margin-top: 110px;
   margin-left: 35px;

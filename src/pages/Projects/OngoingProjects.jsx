@@ -6,8 +6,17 @@ import {
   projectImage11,
   projectImage12,
   projectImage13,
+  projectImage14,
+  projectImage15,
+  projectImage16,
+  projectImage17,
+  projectImage18,
+  projectImage19,
+  projectImage20,
+  projectImage21,
+  projectImage22,
 } from "./projectsImages";
-import Fade from "react-reveal/Fade"
+import Fade from "react-reveal/Fade";
 import Footer from "../../components/Footer/Footer";
 
 export default function OngoingProjects() {
@@ -37,7 +46,7 @@ export default function OngoingProjects() {
               </button>
             </div>
           </Fade>
-          
+
           <Fade right>
             <div className="op-page-images-wrapper">
               <img src={projectImage8} alt="lankaran-pese-college" />
@@ -52,9 +61,9 @@ export default function OngoingProjects() {
         <section className="main-container2">
           <Fade left>
             <div className="op-page-images-wrapper2">
-              <img src={projectImage11} alt="shaki-baltali-village-school" />
-              <img src={projectImage12} alt="shaki-baltali-village-school" />
-              <img src={projectImage13} alt="shaki-baltali-village-school" />
+              <img src={projectImage11} alt="hovsan-project" />
+              <img src={projectImage12} alt="hovsan-project" />
+              <img src={projectImage13} alt="hovsan-project" />
             </div>
           </Fade>
 
@@ -100,16 +109,75 @@ export default function OngoingProjects() {
 
           <Fade right>
             <div className="op-page-images-wrapper3">
-              <img src={projectImage8} alt="yasamal-living-complexes" />
-              <img src={projectImage9} alt="yasamal-living-complexes" />
-              <img src={projectImage10} alt="yasamal-living-complexes" />
+              <img src={projectImage14} alt="midammc-project" />
+              <img src={projectImage15} alt="midammc-project" />
+              <img src={projectImage16} alt="midammc-project" />
+            </div>
+          </Fade>
+        </section>
+        {/* this is a test */}
+        {toggle2 && <div className="op-page-imgs-box"></div>}
+
+        <section className="main-container4">
+          <Fade right>
+            <div className="op-page-images-wrapper4">
+              <img src={projectImage17} alt="shusha-living-sites" />
+              <img src={projectImage18} alt="shusha-living-sites" />
+              <img src={projectImage19} alt="shusha-living-sites" />
+            </div>
+          </Fade>
+
+          <Fade left>
+            <div className="op-page-text-btn-container4">
+              <p className="op-page-text-wrapper4">
+                Şuşa şəhərində, Cənub yaşayış zonasında yaşayış binalarının
+                tikintisi
+              </p>
+              {/* this is a test */}
+              <button
+                className="btn-more"
+                role="button"
+                onClick={() => setToggle2(!toggle2)}
+              >
+                Layihəyə aid daha çox məlumat üçün klikləyin
+              </button>
+            </div>
+          </Fade>
+        </section>
+        {/* this is a test */}
+        {toggle2 && <div className="op-page-imgs-box"></div>}
+
+        <section className="main-container5">
+          <Fade left>
+            <div className="op-page-text-btn-container5">
+              <p className="op-page-text-wrapper5">
+                Azərbaycan Respublikasının Əmək və Əhalinin Sosial Müdafiəsi
+                Nazirliyinin tabeliyində Dayanıqlı və Operativ Sosial Təminat
+                Agentliyi Quba DOST və Peşə Hazırlığı Mərkəzlərinin tikintisi
+              </p>
+              {/* this is a test */}
+              <button
+                className="btn-more"
+                role="button"
+                onClick={() => setToggle2(!toggle2)}
+              >
+                Layihəyə aid daha çox məlumat üçün klikləyin
+              </button>
+            </div>
+          </Fade>
+
+          <Fade right>
+            <div className="op-page-images-wrapper5">
+              <img src={projectImage20} alt="Quba-Dost-merkezi" />
+              <img src={projectImage21} alt="Quba-Dost-merkezi" />
+              <img src={projectImage22} alt="Quba-Dost-merkezi" />
             </div>
           </Fade>
         </section>
         {/* this is a test */}
         {toggle2 && <div className="op-page-imgs-box"></div>}
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

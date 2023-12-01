@@ -32,3 +32,7 @@
   cursor: default;
   color: #d2d2d2;
 }
+
+.dontShowBreadcrumbOnHomePage{
+  display: none;
+}
