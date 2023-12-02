@@ -9,6 +9,7 @@ import OngoingProjects from './pages/Projects/OngoingProjects';
 import RestorationProjects from './pages/Projects/RestorationProjects';
 import ErrorPage from './pages/Error/ErrorPage';
 import Careers from './pages/Careers/Careers';
+import ScrollTopButton from './components/ScrollTopButton/ScrollTopButton';
 
 
 const router = createBrowserRouter(
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
+      <ScrollTopButton/>
     </div>
     );
 }

@@ -4,4 +4,25 @@ import img3 from './assets/Picture1.png'
 import img4 from './assets/construction2.jpg'
 import img5 from './assets/construction3.jpg'
 
-export default [img1,img2,img3,img4,img5]
+export const imagesAndTitles = [
+  {
+    title: 'Project-1',
+    img: img1
+  },
+  {
+    title: 'Project-2',
+    img: img2
+  },
+  {
+    title: 'Project-3',
+    img: img3
+  },
+  {
+    title: 'Project-4',
+    img: img4
+  },
+  {
+    title: 'Project-5',
+    img: img5
+  }
+]

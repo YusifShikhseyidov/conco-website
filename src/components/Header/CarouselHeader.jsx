@@ -12,9 +12,8 @@ import "./CarouselHeader.css";
 
 
 // import swiper-carousel images
-import images from "./images";
+import {imagesAndTitles} from "./images";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 
 export default function CarouselHeader() {
@@ -28,10 +27,12 @@ export default function CarouselHeader() {
         pagination={{ clickable: true }}
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
+        breakpointsBase="container"
       >
-        {images.map((image, index) => (
+        {imagesAndTitles.map((obj, index) => (
           <SwiperSlide className="img-container" key={index}>
-            <img src={image} alt={`slide-${index}`} />
+            <h1 className="swiper-no-swiping">{obj.title}</h1>
+            <img src={obj.img} alt={`slide-${index}`} />
           </SwiperSlide>
         ))}
       </Swiper>

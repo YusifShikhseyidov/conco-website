@@ -17,10 +17,11 @@
   justify-content: center;
 }
 
-.slides-container .img-container p{
+.slides-container .img-container h1{
   position: absolute;
   top: 10%;
   left: 10%;
+  user-select: text;
 }
 
 .slides-container img{
