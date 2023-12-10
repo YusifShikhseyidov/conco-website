@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import {IoIosArrowDown} from "react-icons/io"
 
-export default function MenuItems({ navigationLinks, depthLevel }) {
+export default function MenuItems({ navigationLinks }) {
   // creating a state for dropdown links
   const [open, setOpen] = useState(false);
 
@@ -70,10 +70,4 @@ export default function MenuItems({ navigationLinks, depthLevel }) {
       )}
     </li>
   );
-}
-
-{
-  /* <li className="nav-menu-links" key={index}>
-  <NavLink to={navLink.url}>{navLink.title}</NavLink>
-</li> */
 }

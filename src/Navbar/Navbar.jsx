@@ -23,11 +23,8 @@ function Header() {
             
             {navLinks && navLinks.map((navLink, index) => {
 
-              // a variable for the dropdown menu links
-              const depthLevel = 0
-
               return(
-                <MenuItems navigationLinks={navLink} key={index} depthLevel={depthLevel}/>
+                <MenuItems navigationLinks={navLink} key={index}/>
               )
             })}
 
