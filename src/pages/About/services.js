@@ -1,26 +1,35 @@
-export const services = [
+export const mainServices = [
   {
     name: 'Tikinti',
-    href: './Tikinti(transparent).jpg',
+    href: 'src/pages/About/assets/Tikinti.jpg',
     alt: 'tikinti'
   },
   {
     name: 'Əsaslı Təmir',
-    href: './Əsaslı-təmir(transparent).jpg',
+    href: 'src/pages/About/assets/Esasli-temir.jpg',
     alt: 'əsaslı təmir'
   },
   {
-    name: 'BİM Layihələndirmə',
-    href: './BİM-layihələndirmə(transparent).jpg',
+    name: 'Tarixi Abidələrin Bərpası',
+    href: 'src/pages/About/assets/Tarixi-abidelerin-berpasi.jpg',
+    alt: 'tarixi abidələrin bərpası'
+  }
+]
+
+export const improvementPerspectives = [
+  {
+    name: 'Tikintidə texniki nəzarət',
+    href: 'src/pages/About/assets/texnikiNezaret.png',
     alt: 'BİM layihələndirmə'
   },
   {
-    name: 'Tarixi Abidələrin Bərpası',
-    href: './Tarixi-abidələrin-bərpası(transparent).jpg',
+    name: 'Yüngül Polad Konstruksiyaları',
+    href: 'src/pages/About/assets/poladkonstruksiyalar.png',
     alt: 'tarixi abidələrin bərpası'
-  },  {
-    name: 'Mebel İstehsalı',
-    href: './Mebel-istehsalı(transparent).jpg',
+  },    
+  {
+    name: 'Müasir texnologiylar vasitəsi ilə tikinti işlərinin təkmilləşdirilməsi',
+    href: 'src/pages/About/assets/tikintiTekmilleshdirme.png',
     alt: 'mebel istehsalı'
   }
 ]

@@ -1,5 +1,5 @@
 import "./Footer.css";
-import svgimage from "./svg-city-life.svg";
+import jpgimage from "./company-slogan.jpg";
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-img-2">
-        <img src={svgimage} alt="crane" />
+        <img src={jpgimage} alt="company-symbol" />
       </div>
     </footer>
   );

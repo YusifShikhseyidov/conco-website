@@ -5,8 +5,6 @@ export default function Breadcrumbs() {
 
   const location = useLocation()
 
-  console.log(location)
-
   let currentLink = ''
 
   const crumbs = location.pathname.split('/').filter(crumb=> crumb !== '').map((crumb, index) => {

@@ -1,0 +1,52 @@
+:root{
+  --about-page-primary-color: #01579b;
+}
+
+.about-page_section-2{
+  width: 100%;
+  height: fit-content;
+}
+
+.about-page_section-2 .about-page_main-services {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.about-page_section-2 .about-page_main-services .service-container {
+  width: 17rem;
+  height: 22rem;
+}
+
+.service-container .service-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17rem;
+  height: 10rem;
+}
+
+.service-container .service-logo-container img {
+  transition: all 0.4s;
+}
+
+.service-container:hover .service-logo-container img {
+  transform: scale(1.1);
+}
+
+.service-container .service-name-container {
+  color: #fff;
+  background-color: var(--about-page-primary-color);
+  height: 12rem;
+  width: 17rem;
+  display: grid;
+  place-content: center;
+  font-size: 18px;
+  text-align: center;
+}
+
+.service-container .service-name-container h3 {
+  cursor: default;
+}

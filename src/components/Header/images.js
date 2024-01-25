@@ -6,11 +6,11 @@ import img5 from './assets/construction3.jpg'
 
 export const imagesAndTitles = [
   {
-    title: 'Project-1',
+    title: 'Project-1, lorem ipsum dan den gatarsis floring',
     img: img1
   },
   {
-    title: 'Project-2',
+    title: 'Project-2, lorem ipsum dan den gatarsis floring',
     img: img2
   },
   {

@@ -1,8 +1,4 @@
 .footer-container{
-  background-image: url('./wave-haikei1.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
   display: flex;
   justify-content: space-around;
   gap: 20rem;
@@ -16,12 +12,12 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 2;
-  color: #ffffff;
+  color: #000;
 }
 
 .footer-img-2{
-  height: 11rem;
-  width: 27rem;
+  height: 6rem;
+  width: 28rem;
 }
 
 .footer-img-2 img{

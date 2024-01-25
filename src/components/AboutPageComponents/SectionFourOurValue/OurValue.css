@@ -1,0 +1,31 @@
+:root{
+  --about-page-primary-color: #01579b;
+  --section-four-text-color: #000000;
+}
+
+::selection{
+  background-color: var(--section-four-text-color);
+  color: var(--about-page-primary-color);
+}
+
+.about-page_section-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 3rem;
+  background-color: var(--about-page-primary-color);
+}
+
+
+.about-page_section-4 h1 {
+  color: var(--section-four-text-color);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-page_section-4 .our-value-diagram{
+  display: flex;
+  justify-content: center;
+}

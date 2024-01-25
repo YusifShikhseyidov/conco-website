@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vacancies",
+  "info": {
+    "singularName": "vacancy",
+    "pluralName": "vacancies",
+    "displayName": "vacancy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vacancy_title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "vacancy_description": {
+      "type": "text",
+      "required": true
+    },
+    "vacancy_salary": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

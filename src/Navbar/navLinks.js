@@ -1,36 +1,36 @@
 export const navLinks = [
   {
-    title: 'Home',
+    title: 'Əsas Səhifə',
     url: '/'
   },
   {
-    title: 'About',
+    title: 'Haqqımızda',
     url: 'about'
   },
   {
-    title: 'Projects',
+    title: 'Layihələr',
     url: 'projects',
     subLinks: [
       {
-        title: 'Finished Projects',
+        title: 'Bitmiş Layihələr',
         url: 'projects/finished-projects'
       },
       {
-        title: 'Ongoing Projects',
+        title: 'Davam Edən Layihələr',
         url: 'projects/ongoing-projects'
       },
       {
-        title: 'Restoration Projects',
+        title: 'Restavrasiya Layihələri',
         url: 'projects/restoration-projects'
       }
     ]
   },
   {
-    title: 'Careers',
+    title: 'Vakansiya',
     url: 'careers'
   },
   {
-    title: 'Contact',
+    title: 'Əlaqə',
     url: 'contact'
   }
 ]

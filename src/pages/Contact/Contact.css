@@ -80,3 +80,8 @@
 .address-on-map .text-address p{
   margin: 2rem 0 2rem;
 }
+
+.address-on-map .map-address iframe{
+  width: 1150px;
+  height: 450px;
+}

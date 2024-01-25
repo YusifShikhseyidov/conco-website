@@ -1,12 +1,12 @@
 import Marquee from "react-fast-marquee";
-import img1 from './assets/sifarisci-1(transparent).jpg'
-import img2 from './assets/sifarisci-2-(transparent).jpg'
-import img3 from './assets/sifarisci-3-(transparent).jpg'
-import img4 from './assets/sifarisci-4-(transparent).jpg'
-import img5 from './assets/sifarisci-5-(transparent).jpg'
+import img1 from './assets/sifarisci-1.jpg'
+import img2 from './assets/sifarisci-2.jpg'
+import img3 from './assets/sifarisci-3.jpg'
+import img4 from './assets/sifarisci-4.jpg'
+import img5 from './assets/sifarisci-5.jpg'
 import img6 from './assets/sifarisci-6.jpg'
 import img7 from './assets/sifarisci-7.jpg'
-import img8 from './assets/sifarisci-8-(transparent).jpg'
+import img8 from './assets/sifarisci-8.jpg'
 import './Sponsors.css'
 
 

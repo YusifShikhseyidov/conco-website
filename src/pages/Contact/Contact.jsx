@@ -38,9 +38,7 @@ function Contact() {
         </div>
         <div className="map-address">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.99865613201!2d49.86158557643959!3d40.40888055611648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d55f483215d%3A0x6579b75be1ed3d12!2zxo9obcmZZCBSyZljyZlibGksIEJha8Sx!5e0!3m2!1sen!2saz!4v1697738710351!5m2!1sen!2saz"
-            width="1150"
-            height="450"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1519.0174317715537!2d49.86349044782005!3d40.40807844207605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d55f483215d%3A0x6579b75be1ed3d12!2sAhmad%20Rajabli%2C%20Baku!5e0!3m2!1sen!2saz!4v1705865395803!5m2!1sen!2saz"
             style={{ border: "0" }}
             allowFullScreen=""
             loading="lazy"

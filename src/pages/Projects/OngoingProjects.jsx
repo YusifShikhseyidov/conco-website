@@ -16,7 +16,7 @@ import {
   projectImage21,
   projectImage22,
 } from "./projectsImages";
-import Fade from "react-reveal/Fade";
+import {Fade} from "react-awesome-reveal";
 import Footer from "../../components/Footer/Footer";
 
 export default function OngoingProjects() {
@@ -31,7 +31,7 @@ export default function OngoingProjects() {
       </header>
       <main className="op-page">
         <section className="main-container">
-          <Fade left>
+          <Fade direction="left">
             <div className="op-page-text-btn-container">
               <p className="op-page-text-wrapper">
                 Lənkəran Peşə Liseyinin Yenidən qurulması
@@ -47,7 +47,7 @@ export default function OngoingProjects() {
             </div>
           </Fade>
 
-          <Fade right>
+          <Fade direction="right">
             <div className="op-page-images-wrapper">
               <img src={projectImage8} alt="lankaran-pese-college" />
               <img src={projectImage9} alt="lankaran-pese-college" />
@@ -59,7 +59,7 @@ export default function OngoingProjects() {
         {toggle && <div className="op-page-imgs-box"></div>}
 
         <section className="main-container2">
-          <Fade left>
+          <Fade direction="left">
             <div className="op-page-images-wrapper2">
               <img src={projectImage11} alt="hovsan-project" />
               <img src={projectImage12} alt="hovsan-project" />
@@ -67,7 +67,7 @@ export default function OngoingProjects() {
             </div>
           </Fade>
 
-          <Fade right>
+          <Fade direction="right">
             <div className="op-page-text-btn-container2">
               <p className="op-page-text-wrapper2">
                 Bakı şəhəri, Suraxanı rayonu, Hövsan qəsəbəsinin 23,25 ha
@@ -89,7 +89,7 @@ export default function OngoingProjects() {
         {toggle1 && <div className="op-page-imgs-box"></div>}
 
         <section className="main-container3">
-          <Fade left>
+          <Fade direction="left">
             <div className="op-page-text-btn-container3">
               <p className="op-page-text-wrapper3">
                 “MİDA” MMC-nin sifarişi ilə Sumqayıt şəhəri, M.Hüseynzadə adına
@@ -107,7 +107,7 @@ export default function OngoingProjects() {
             </div>
           </Fade>
 
-          <Fade right>
+          <Fade direction="right">
             <div className="op-page-images-wrapper3">
               <img src={projectImage14} alt="midammc-project" />
               <img src={projectImage15} alt="midammc-project" />
@@ -119,7 +119,7 @@ export default function OngoingProjects() {
         {toggle2 && <div className="op-page-imgs-box"></div>}
 
         <section className="main-container4">
-          <Fade right>
+          <Fade direction="right">
             <div className="op-page-images-wrapper4">
               <img src={projectImage17} alt="shusha-living-sites" />
               <img src={projectImage18} alt="shusha-living-sites" />
@@ -127,7 +127,7 @@ export default function OngoingProjects() {
             </div>
           </Fade>
 
-          <Fade left>
+          <Fade direction="left">
             <div className="op-page-text-btn-container4">
               <p className="op-page-text-wrapper4">
                 Şuşa şəhərində, Cənub yaşayış zonasında yaşayış binalarının
@@ -148,7 +148,7 @@ export default function OngoingProjects() {
         {toggle2 && <div className="op-page-imgs-box"></div>}
 
         <section className="main-container5">
-          <Fade left>
+          <Fade direction="left">
             <div className="op-page-text-btn-container5">
               <p className="op-page-text-wrapper5">
                 Azərbaycan Respublikasının Əmək və Əhalinin Sosial Müdafiəsi
@@ -166,7 +166,7 @@ export default function OngoingProjects() {
             </div>
           </Fade>
 
-          <Fade right>
+          <Fade direction="right">
             <div className="op-page-images-wrapper5">
               <img src={projectImage20} alt="Quba-Dost-merkezi" />
               <img src={projectImage21} alt="Quba-Dost-merkezi" />
