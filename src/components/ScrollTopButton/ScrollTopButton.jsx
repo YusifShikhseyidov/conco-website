@@ -17,7 +17,7 @@ export default function ScrollTopButton() {
 
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
-      if(window.scrollY>300){
+      if(window.scrollY>400){
         setShowButton(true)
       }else{
         setShowButton(false)

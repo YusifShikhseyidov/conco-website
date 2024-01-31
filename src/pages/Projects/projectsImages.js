@@ -20,6 +20,14 @@ import projectImage19 from './assets/Shusha-living-site3.jpg'
 import projectImage20 from './assets/Quba-Dost1.jpg'
 import projectImage21 from './assets/Quba-Dost2.jpg'
 import projectImage22 from './assets/Quba-Dost3.jpg'
+import projectImage23 from './assets/baki-xanlar-evi.png'
+import projectImage24 from './assets/baki-xanlar-evi-1.png'
+import projectImage25 from './assets/baki-xanlar-evi-2.png'
+import projectImage26 from './assets/shusha-bina-konservasiya.png'
+import projectImage27 from './assets/shusha-bina-konservasiya-1.png'
+import projectImage28 from './assets/shusha-qala-divari.png'
+import projectImage29 from './assets/shusha-qala-divari-1.png'
+import projectImage30 from './assets/shusha-qala-divari-2.png'
 
 
 
@@ -30,5 +38,8 @@ export {
   projectImage10, projectImage11, projectImage12,
   projectImage13, projectImage14, projectImage15, 
   projectImage16, projectImage17, projectImage18, 
-  projectImage19, projectImage20, projectImage21, projectImage22, 
+  projectImage19, projectImage20, projectImage21, 
+  projectImage22, projectImage23, projectImage24,
+  projectImage25, projectImage26, projectImage27,
+  projectImage28, projectImage29, projectImage30,
 }

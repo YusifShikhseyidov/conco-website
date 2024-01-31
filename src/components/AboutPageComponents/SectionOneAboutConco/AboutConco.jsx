@@ -1,10 +1,18 @@
 import companyCover from "../../../pages/About/assets/conco-company-cover.png";
+import MainServices from "../SectionTwoMainServices/MainServices";
 import "./AboutConco.css"
 
+// import react-awesome-reveal Zoom effect
+import { Zoom } from "react-awesome-reveal";
+
 export default function AboutConco() {
+  const currentDate = new Date().getFullYear();
+  const companyFoundationYear = 2015;
+  const inIndustryFor = currentDate - companyFoundationYear;
+  
   return (
     <section className="about-page_section-1">
-      <div>
+      <div className="about-page_company-cover">
         <img src={companyCover} alt="company-cover" />
       </div>
       <div className="about_page-about_us-keeper">
@@ -14,7 +22,7 @@ export default function AboutConco() {
           <strong>
             <q>CONCO</q> QSC
           </strong>{' '}
-          2015-ci ildə qeydiyyatdan keçib. Şirkət artıq 8 ildir ki, əsaslı
+          2015-ci ildə qeydiyyatdan keçib. Şirkət artıq {inIndustryFor} ildir ki, əsaslı
           tikinti, bərpa, texniki nəzarət və dizayn işlərində uğurla fəaliyyət
           göstərir. Bu günə kimi Azərbaycanın müxtəlif regionlarında yerləşən,
           müxtəlif təyinatlı obyektlərin təmir-tikinti, bərpa-gücləndirmə işləri
@@ -26,9 +34,17 @@ export default function AboutConco() {
           qanunvericiliyin tələblərini daim rəhbər tutur.
         </p>
 
-        <h1 className="about-page_our-philosophy_1">hədsiz mükəmməllik</h1>
+        <hr />
+        <Zoom>
+          <p className="about-page_our-philosophy_1">hədsiz mükəmməllik</p>
+        </Zoom>
         <p className="about-page_our-philosophy_2">bizim iş fəlsəfəmizdir</p>
+        <hr />
+
+        <MainServices/>
+      
       </div>
+
     </section>
   );
 }

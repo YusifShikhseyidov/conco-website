@@ -68,33 +68,5 @@
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
   left: 90px;
-  width: 95px;
-  border: 2px solid var(--swiper-overall-color);
-  border-radius: 2rem;
-}
-
-.go-down-arrow{
-  position: absolute;
-  z-index: 5;
-  bottom: 5%;
-  left: 50%;
-  display: flex;
-  padding: 10px;
-  color: var(--go-down-arrow-color);
-  background-color: var(--swiper-overall-color);
-  animation: topToBottom 1s 1s infinite;
-}
-
-@keyframes topToBottom {
-  0%{
-    transform: translateY(0px);
-  }
-
-  50%{
-    transform: translateY(10px);
-  }
-
-  100%{
-    transform: translateY(0px);
-  }
+  width: auto;
 }

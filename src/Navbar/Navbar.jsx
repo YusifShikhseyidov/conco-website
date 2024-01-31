@@ -24,7 +24,7 @@ function Header() {
             {navLinks && navLinks.map((navLink, index) => {
 
               return(
-                <MenuItems navigationLinks={navLink} key={index}/>
+                <MenuItems navigationLinks={navLink} index={index} key={index}/>
               )
             })}
 
@@ -36,7 +36,6 @@ function Header() {
       <main>
         <Outlet/>
       </main>
-
     </>
   )
 }

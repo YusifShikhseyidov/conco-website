@@ -1,5 +1,5 @@
-.contact-page{
-  margin-bottom: 8rem;
+:root{
+  --contact-page-primary-color: #01579b;
 }
 
 .contact-page h1{
@@ -11,7 +11,7 @@
 .contact-details{
   display: flex;
   width: 70rem;
-  margin: 3rem auto 5rem;
+  margin: 1rem auto 3rem;
 }
 
 .contact-details span{
@@ -35,7 +35,7 @@
 }
 
 .phone-icon-wrapper svg{
-  fill: #c7aa55;
+  fill: var(--contact-page-primary-color);
   margin-top: 2px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .email-icon-wrapper svg{
-  stroke: #c7aa55;
+  stroke: var(--contact-page-primary-color);
 }
 
 .address-on-map{
@@ -70,15 +70,15 @@
 }
 
 .address-on-map .text-address svg{
-  margin: 2rem 1rem 2rem 0;
+  margin: 0.5rem 1rem 0.5rem 0;
 }
 
 .address-on-map .text-address svg path{
-  stroke: #c7aa55;
+  stroke: var(--contact-page-primary-color);
 }
 
 .address-on-map .text-address p{
-  margin: 2rem 0 2rem;
+  margin: 0.5rem 0 0.5rem;
 }
 
 .address-on-map .map-address iframe{

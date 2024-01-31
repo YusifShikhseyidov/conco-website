@@ -13,7 +13,6 @@ import "./CarouselHeader.css";
 
 // import swiper-carousel images
 import {imagesAndTitles} from "./images";
-import { MdKeyboardArrowDown } from "react-icons/md";
 
 
 export default function CarouselHeader() {
@@ -36,7 +35,6 @@ export default function CarouselHeader() {
           </SwiperSlide>
         ))}
       </Swiper>
-        <a href="#scrollHere" className="go-down-arrow"><MdKeyboardArrowDown /></a>
     </div>
   );
 }

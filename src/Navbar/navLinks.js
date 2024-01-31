@@ -5,14 +5,32 @@ export const navLinks = [
   },
   {
     title: 'Haqqımızda',
-    url: 'about'
+    url: 'about',
+    subLinks: [
+      {
+        title: 'Haqqımızda',
+        url: 'about/about-us'
+      },
+      {
+        title: 'Inkişaf İstiqamətləri',
+        url: 'about/improvement-perspectives'
+      },
+      {
+        title: 'Niyə Biz',
+        url: 'about/our-value'
+      },
+      {
+        title: 'Sertifikatlar',
+        url: 'about/certificates'
+      },
+    ]
   },
   {
     title: 'Layihələr',
     url: 'projects',
     subLinks: [
       {
-        title: 'Bitmiş Layihələr',
+        title: 'Təhvil Verilmiş Layihələr',
         url: 'projects/finished-projects'
       },
       {

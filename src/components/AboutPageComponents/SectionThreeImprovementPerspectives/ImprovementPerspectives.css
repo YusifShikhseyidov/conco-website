@@ -4,7 +4,10 @@
 
 .about-page_section-3{
   width: 100%;
-  height: fit-content;
+  height: 63vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-page_section-3 .about-page_main-perspectives {

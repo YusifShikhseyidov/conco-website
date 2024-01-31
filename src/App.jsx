@@ -17,12 +17,30 @@ import ScrollTopButton from "./components/ScrollTopButton/ScrollTopButton";
 import Career from "./pages/Careers/Career";
 import Careers from "./pages/Careers/Careers";
 import CareersLayout from "./pages/Careers/CareersLayout";
+import ImprovementPerspectives from "./components/AboutPageComponents/SectionThreeImprovementPerspectives/ImprovementPerspectives";
+import AboutConco from "./components/AboutPageComponents/SectionOneAboutConco/AboutConco";
+import OurValue from "./components/AboutPageComponents/SectionFourOurValue/OurValue";
+import Certificates from "./components/AboutPageComponents/SectionFiveCertificates/Certificates"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Navbar />} errorElement={<ErrorPage />}>
       <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
+      <Route path="about" element={<About />} >
+        <Route path="about-us" element={<AboutConco />} />
+        <Route
+          path="improvement-perspectives"
+          element={<ImprovementPerspectives />}
+        />
+        <Route
+          path="our-value"
+          element={<OurValue />}
+        />
+        <Route
+          path="certificates"
+          element={<Certificates />}
+        />
+      </Route>
       <Route path="projects" element={<Projects />}>
         <Route
           path="/projects/finished-projects"

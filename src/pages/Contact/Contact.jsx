@@ -6,9 +6,7 @@ import { GrMapLocation } from "react-icons/gr";
 function Contact() {
   return (
     <main className="contact-page">
-      <header>
         <h1>Əlaqə</h1>
-      </header>
       <section className="contact-details">
         <div className="contact-phone-container">
           <a href="tel:(+994 12) 465 73 07">

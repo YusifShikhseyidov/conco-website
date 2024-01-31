@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  /* --primary: #1f3e72;
-  --secondary: rgba(255, 255, 255, 0.78);
-  --black: #131110;
-  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
-  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
-  --blue: #4066ff;
-  --lightBlue: #eeeeff;
-  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25); */
   --swiper-pagination-color: #01579b;
   --swiper-theme-color: #01579b;
   --swiper-pagination-bullet-inactive-opacity: 0.5;
@@ -22,11 +14,6 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   list-style-type: none;
-}
-
-*::selection{
-  background-color: #01579b;
-  color: #fff;
 }
 
 a {

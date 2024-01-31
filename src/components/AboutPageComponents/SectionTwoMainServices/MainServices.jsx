@@ -3,10 +3,10 @@ import { mainServices } from "../../../pages/About/services";
 import "./MainServices.css"
 
 
-export default function MainAreasOfWork() {
+export default function MainServices() {
   return (
     <section className="about-page_section-2">
-      <h1>Əsas Fəaliyyət istiqamətləri</h1>
+      <h2>Əsas Fəaliyyət istiqamətləri</h2>
 
       <div className="about-page_main-services">
         {mainServices.map((service, index) => (

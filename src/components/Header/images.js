@@ -1,28 +1,48 @@
-import img1 from './assets/home-page-carousel_5.png'
-import img2 from './assets/home-page-carousel_4.png'
-import img3 from './assets/Picture1.png'
-import img4 from './assets/construction2.jpg'
-import img5 from './assets/construction3.jpg'
+import img1 from './assets/Baki-Xanlar-Evi.jpg'
+import img2 from './assets/Bine-mektebi-2.jpeg'
+import img3 from './assets/Bine-mektebi.jpeg'
+import img4 from './assets/qubaDost-DOST-merkezi.png'
+import img5 from './assets/qubaDost-Peshe-hazirliq-merkezi-binasi.png'
+import img6 from './assets/Shusha-Qala-divari.jpeg'
+import img7 from './assets/Shusha-Qalasi.jpeg'
+import img8 from './assets/Shusha-yashayish-binalari.jpeg'
+import img9 from './assets/Shusha-yashayish-binalari2.png'
 
 export const imagesAndTitles = [
   {
-    title: 'Project-1, lorem ipsum dan den gatarsis floring',
+    title: 'Bakı Xanlar Evi',
     img: img1
   },
   {
-    title: 'Project-2, lorem ipsum dan den gatarsis floring',
+    title: 'Binə Məktəbi-2',
     img: img2
   },
   {
-    title: 'Project-3',
+    title: 'Binə Məktəbi',
     img: img3
   },
   {
-    title: 'Project-4',
+    title: 'Quba Dost Mərkəzi - Dost Mərkəzi Binası',
     img: img4
   },
   {
-    title: 'Project-5',
+    title: 'Quba Dost Mərkəzi - Peşə Hazırlıq Mərkəzi Binası',
     img: img5
-  }
+  },
+  {
+    title: 'Şuşa Qala Divarı',
+    img: img6
+  },
+  {
+    title: 'Şuşa Qalası',
+    img: img7
+  },
+  {
+    title: 'Şuşa Yaşayış Binaları',
+    img: img8
+  },
+  {
+    title: 'Şuşa Yaşayış Binaları-2',
+    img: img9
+  },
 ]
