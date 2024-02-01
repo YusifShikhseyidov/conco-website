@@ -12,8 +12,8 @@ export const navLinks = [
         url: 'about/about-us'
       },
       {
-        title: 'Inkişaf İstiqamətləri',
-        url: 'about/improvement-perspectives'
+        title: 'Sifarişçilər',
+        url: 'about/sponsors'
       },
       {
         title: 'Niyə Biz',

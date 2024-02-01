@@ -28,6 +28,9 @@ import projectImage27 from './assets/shusha-bina-konservasiya-1.png'
 import projectImage28 from './assets/shusha-qala-divari.png'
 import projectImage29 from './assets/shusha-qala-divari-1.png'
 import projectImage30 from './assets/shusha-qala-divari-2.png'
+import projectImage31 from './assets/BineMektebiYENI.jpg'
+import projectImage32 from './assets/binemektebiYENI1.jpg'
+import projectImage33 from './assets/binemektebiYENI2.jpg'
 
 
 
@@ -42,4 +45,5 @@ export {
   projectImage22, projectImage23, projectImage24,
   projectImage25, projectImage26, projectImage27,
   projectImage28, projectImage29, projectImage30,
+  projectImage31, projectImage32, projectImage33,
 }

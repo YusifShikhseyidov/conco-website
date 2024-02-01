@@ -6,12 +6,15 @@ import {
   projectImage3,
   projectImage4,
   projectImage5,
+  projectImage31,
+  projectImage32,
+  projectImage33,
 } from "./projectsImages";
 // U can use react-spring library for smooth transition appear and diisappear of the divs for extra photos example of which is at codesandbox.io
 
 export default function FinishedProjects() {
 
-  const xezerRayonuPhotos = [projectImage1,projectImage2,projectImage3,]
+  const xezerRayonuPhotos = [projectImage1,projectImage2,projectImage3, projectImage31, projectImage32,]
   const baltaliKendMektebiPhotos = [projectImage5,projectImage4,]
 
   return (

@@ -1,6 +1,11 @@
 .main-marquee-container{
   width: 1728px;
   margin: 0 auto 10rem;
+  height: 63vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .marquee-title{

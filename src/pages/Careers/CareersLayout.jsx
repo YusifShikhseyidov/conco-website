@@ -9,7 +9,7 @@ export default function CareersLayout() {
 
 
   return (
-    <>
+    <div className="careersWrapper">
       <header className="careers-layout-header">
         <h1>
           V<span>akansiy</span>alar
@@ -19,6 +19,6 @@ export default function CareersLayout() {
       <main className="careers-layout-main">
         <Outlet/>
       </main>
-    </>
+    </div>
   )
 }

@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
+import {Fade} from "react-awesome-reveal"
+
 // import swiper library styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -30,7 +32,9 @@ export default function CarouselHeader() {
       >
         {imagesAndTitles.map((obj, index) => (
           <SwiperSlide className="img-container" key={index}>
-            <h1 className="swiper-no-swiping">{obj.title}</h1>
+            <Fade direction="left" delay={1000}>
+              <h1 className="swiper-no-swiping">{obj.title}</h1>
+            </Fade>
             <img src={obj.img} alt={`slide-${index}`} />
           </SwiperSlide>
         ))}
