@@ -32,7 +32,7 @@ export const imagesAndTitles = [
     img: img3
   },
   {
-    title: 'Quba Dost Mərkəzi - Dost Mərkəzi Binası',
+    title: 'Quba Dost Mərkəzi - Dost Mərkəzi Binası ve seherin gozel achilishi ile biirge',
     img: img4
   },
   {

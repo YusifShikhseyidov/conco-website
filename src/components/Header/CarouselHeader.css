@@ -43,16 +43,16 @@
   color: var(--swiper-overall-color);
   width: 85px;
   height: 826px;
-  top: 24px;
+  top: 22px;
 }
 
 .swiper-button-next{
-  right: 2px;
+  right: 0;
   transition: 0.2s;
 }
 
 .swiper-button-prev{
-  left: 2px;
+  left: 0;
   transition: 0.2s;
 }
 
@@ -71,6 +71,18 @@
   width: auto;
 }
 
-.swiper-no-swiping{
-  transform: translate(100px, 100px);
+.swiper-heading{
+  transform: translate(10px);
+  animation: fadewithdelay 0.8s 1s ease-in-out both alternate;
+}
+
+@keyframes fadewithdelay{
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
