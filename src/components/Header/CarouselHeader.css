@@ -71,9 +71,8 @@
   width: auto;
 }
 
-.swiper-heading{
-  transform: translate(10px);
-  animation: fadewithdelay 0.8s 1s ease-in-out both alternate;
+.slides-container .img-container h1.swiper-heading{
+  animation: fadewithdelay 0.8s 0.8s ease both;
 }
 
 @keyframes fadewithdelay{

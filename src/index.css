@@ -20,3 +20,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+::selection{
+  color: #fff;
+  background-color: #01579b;
+}

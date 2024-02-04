@@ -1,14 +1,19 @@
 import companyCover from "../../../pages/About/assets/conco-company-cover.png";
 import MainServices from "../SectionTwoMainServices/MainServices";
+import { mainServices } from "../../../pages/About/services";
 import "./AboutConco.css"
 
 // import react-awesome-reveal Zoom effect
 import { Zoom } from "react-awesome-reveal";
 
 export default function AboutConco() {
+  // define current date using Date object
   const currentDate = new Date().getFullYear();
   const companyFoundationYear = 2015;
   const inIndustryFor = currentDate - companyFoundationYear;
+
+  // define title for main services component
+  const title = "Əsas Fəaliyyət İstiqamətləri";
   
   return (
     <section className="about-page_section-1">
@@ -41,7 +46,7 @@ export default function AboutConco() {
         <p className="about-page_our-philosophy_2">bizim iş fəlsəfəmizdir</p>
         <hr />
 
-        <MainServices/>
+        <MainServices title={title} mainServices={mainServices}/>
       
       </div>
 

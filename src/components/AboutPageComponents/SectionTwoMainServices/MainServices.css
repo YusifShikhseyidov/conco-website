@@ -21,7 +21,7 @@
 }
 
 .about-page_section-2 .about-page_main-services .service-container {
-  width: 13rem;
+  width: 15rem;
   height: 19rem;
 }
 
@@ -34,6 +34,8 @@
 }
 
 .service-container .service-logo-container img {
+  width: 70%;
+  height: 70%;
   transition: all 0.4s;
 }
 

@@ -5,20 +5,20 @@ import useFetch from "../../components/hooks/useFetch"
 
 
 export default function CareersLayout() {
-  const {error} = useFetch("/vacancies")
+  const {data} = useFetch("/vacancies")
 
 
   return (
-    <div className="careersWrapper">
+    <>
       <header className="careers-layout-header">
         <h1>
-          V<span>akansiy</span>alar
+          Vakansiyalar
         </h1>
-        {error && <p>Hal-hazirda vakansiya movcud deyil</p>}
+        {data.length===0 && <p>Hal-hazirda vakansiya movcud deyil</p>}
       </header>
       <main className="careers-layout-main">
         <Outlet/>
       </main>
-    </div>
+    </>
   )
 }
