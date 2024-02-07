@@ -39,7 +39,7 @@ export default function CarouselHeader() {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         breakpointsBase="container"
       >
-        {data && data?.map((obj, index) => (
+        {!loading && !error && data && data?.map((obj, index) => (
           <SwiperSlide className="img-container" key={obj.id}>
             <h1 className={`swiper-no-swiping ${activeIndex === index ? "swiper-heading" : ""}`}>{obj.attributes.slider_heading}</h1>
             <img src={obj.attributes.slider_img.data[0].attributes.url} alt={`slide-${obj.id}`} />
