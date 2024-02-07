@@ -8,8 +8,8 @@
   background-color: #01579b;
   color: #fff;
   cursor: pointer;
-  border-radius: 10px;
-  border: none;
+  border-radius: 13px;
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
