@@ -26,7 +26,7 @@ export default function CarouselHeader() {
 
   return (
     <div className="container">
-      {loading && <div>loading...</div>}
+      {loading && <div className="loader"></div>}
       {error && <div>error...</div>}
       <Swiper
         onSlideChange={(element)=>setActiveIndex(element.activeIndex)}
