@@ -29,11 +29,11 @@ export default function RestorationProjects() {
 
         {loading && <div className="loader"></div>}
         {!loading && data.length > 0 && data?.map((obj)=>{
-          const imgs = obj.attributes.finished_project_imgs.data.map((img)=>img.attributes.url)
+          const imgs = obj.attributes.restoration_project_imgs.data.map((img)=>img.attributes.url)
           return (
             <SingleProject 
               key={obj.id}
-              title={obj.attributes.finished_project_heading} 
+              title={obj.attributes.restoration_project_heading} 
               photos={imgs} 
             />
           )

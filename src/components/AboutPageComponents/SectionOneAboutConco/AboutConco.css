@@ -88,3 +88,26 @@
   border: 1px solid #0000000f;
   margin: 0 auto 1rem;
 }
+
+@media (max-width: 1440px){
+  .about-page_section-1 .about-page_company-cover{
+    height: 55rem;
+  }
+}
+
+@media (max-width: 1200px){
+  .about-page_section-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px){
+  .about-page_section-1 .about-page_company-cover{
+    width: 95%;
+  }
+
+  .about-page_section-1 .about_page-about_us-keeper{
+    width: 96%;
+  }
+}

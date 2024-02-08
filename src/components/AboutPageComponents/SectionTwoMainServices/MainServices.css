@@ -57,3 +57,25 @@
 .service-container .service-name-container h3 {
   cursor: default;
 }
+
+@media (max-width: 1440px){
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 12rem;
+    height: 17rem;
+  }
+}
+
+@media (max-width: 680px){
+  .about-page_section-2 .about-page_main-services {
+    flex-direction: column;
+  }
+
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 22rem;
+    height: 25rem;
+  }
+
+  .service-container .service-name-container {
+    font-size: 25px;
+  }
+}

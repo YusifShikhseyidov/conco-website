@@ -73,3 +73,9 @@
 .svg-background-container p:nth-child(2){
   font-size: 15px;
 }
+
+@media (max-width: 768px){
+  .svg-background-container{
+    grid-template-columns: 1fr;
+  }
+}

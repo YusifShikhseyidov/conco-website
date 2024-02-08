@@ -23,6 +23,8 @@ import useFetch from "../../components/hooks/useFetch";
 export default function OngoingProjects() {
   const {data, loading} = useFetch("/ongoing-projects?populate=*")
 
+  console.log(data)
+
   const lenkeranPeshePhotos = [projectImage8, projectImage9, projectImage10];
   const hovsanPhotos = [projectImage11, projectImage12, projectImage13];
   const midaPhotos = [projectImage14, projectImage15, projectImage16];
@@ -38,11 +40,11 @@ export default function OngoingProjects() {
 
         {loading && <div className="loader"></div>}
         {!loading && data.length > 0 && data?.map((obj)=>{
-          const imgs = obj.attributes.finished_project_imgs.data.map((img)=>img.attributes.url)
+          const imgs = obj.attributes.ongoing_project_imgs.data.map((img)=>img.attributes.url)
           return (
             <SingleProject 
               key={obj.id}
-              title={obj.attributes.finished_project_heading} 
+              title={obj.attributes.ongoing_project_heading} 
               photos={imgs} 
             />
           )

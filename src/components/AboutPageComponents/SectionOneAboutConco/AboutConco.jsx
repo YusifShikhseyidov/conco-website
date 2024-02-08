@@ -1,55 +1,52 @@
-import companyCover from "../../../pages/About/assets/conco-company-cover.png";
 import MainServices from "../SectionTwoMainServices/MainServices";
 import { mainServices } from "../../../pages/About/services";
+import useFetch from "../../hooks/useFetch";
 import "./AboutConco.css"
 
 // import react-awesome-reveal Zoom effect
 import { Zoom } from "react-awesome-reveal";
 
 export default function AboutConco() {
-  // define current date using Date object
-  const currentDate = new Date().getFullYear();
-  const companyFoundationYear = 2015;
-  const inIndustryFor = currentDate - companyFoundationYear;
+
+  const {data,loading} = useFetch("/about-us-collection-types?populate=*")
 
   // define title for main services component
   const title = "Əsas Fəaliyyət İstiqamətləri";
   
   return (
     <section className="about-page_section-1">
-      <div className="about-page_company-cover">
-        <img src={companyCover} alt="company-cover" />
-      </div>
-      <div className="about_page-about_us-keeper">
-        <h1 className="about-page_title">Haqqımızda</h1>
+      {loading && <div>loading...</div>}
+      {!loading && data && (
+        <>
+        {data.map((aboutuscoverimg)=>(
+          <div className="about-page_company-cover" key={aboutuscoverimg.id}>
+            <img src={aboutuscoverimg.attributes.conco_about_us_cover_img.data.attributes.url} alt="company-cover" />
+          </div>
 
-        <p className="about-page_about-conco">
-          <strong>
-            <q>CONCO</q> QSC
-          </strong>{' '}
-          2015-ci ildə qeydiyyatdan keçib. Şirkət artıq {inIndustryFor} ildir ki, əsaslı
-          tikinti, bərpa, texniki nəzarət və dizayn işlərində uğurla fəaliyyət
-          göstərir. Bu günə kimi Azərbaycanın müxtəlif regionlarında yerləşən,
-          müxtəlif təyinatlı obyektlərin təmir-tikinti, bərpa-gücləndirmə işləri
-          ilə bağlı sifarişləri qəbul edib, layihələri uğurla sona çatdırıb və
-          onları sahiblərinə təhvil vermişdir. Sifarişlərin icra olunması
-          prosesində “CONCO” QSC dövlətin qanunlarını, Nazirlər Kabinetinin
-          qərarlarını, sağlamlıq, əməyin mühafizəsi, təhlükəsizlik texnikası,
-          yanğın təhlükəsizliyi və ətraf mühitin mühafizəsi üzrə
-          qanunvericiliyin tələblərini daim rəhbər tutur.
-        </p>
+        ))}
+          <div className="about_page-about_us-keeper">
+            <h1 className="about-page_title">Haqqımızda</h1>
 
-        <hr />
-        <Zoom>
-          <p className="about-page_our-philosophy_1">hədsiz mükəmməllik</p>
-        </Zoom>
-        <p className="about-page_our-philosophy_2">bizim iş fəlsəfəmizdir</p>
-        <hr />
+            {data.map((aboutus)=>(
+              <p className="about-page_about-conco" key={aboutus.id}>
+                {aboutus.attributes.conco_about_us}
+              </p>
 
-        <MainServices title={title} mainServices={mainServices}/>
-      
-      </div>
+            ))}
 
+            <hr />
+            <Zoom triggerOnce={true}>
+              <p className="about-page_our-philosophy_1">hədsiz mükəmməllik</p>
+            </Zoom>
+            <p className="about-page_our-philosophy_2">
+              bizim iş fəlsəfəmizdir
+            </p>
+            <hr />
+
+            <MainServices title={title} mainServices={mainServices} />
+          </div>
+        </>
+      )}
     </section>
   );
 }
