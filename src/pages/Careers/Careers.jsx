@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
 import useFetch from "../../components/hooks/useFetch";
 
 export default function Careers() {
   const { data, loading, error } = useFetch("/vacancies");
-  console.log(data);
 
   return (
     <>
