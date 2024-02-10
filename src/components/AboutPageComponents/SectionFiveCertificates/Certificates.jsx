@@ -3,7 +3,7 @@ import crt1 from "../../../pages/About/assets/AZS-ISO-9001-Sertifikat.png";
 import crt2 from "../../../pages/About/assets/AZS-ISO-14001-Sertifikat.png";
 import crt3 from "../../../pages/About/assets/AZS-ISO-45001-Sertifikat.png";
 import crt4 from "../../../pages/About/assets/AZS-ISO-50001-Sertifikat.png";
-import { Bounce, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 export default function Certificates() {
   return (

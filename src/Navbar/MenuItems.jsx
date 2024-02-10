@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { IoIosArrowDown } from "react-icons/io";
 
-export default function MenuItems({ navigationLinks, index }) {
+export default function MenuItems({ navigationLinks}) {
   // creating a state for dropdown links
   const [open, setOpen] = useState(false);
 
@@ -19,27 +19,16 @@ export default function MenuItems({ navigationLinks, index }) {
       }
     };
 
-    window.addEventListener("click", handleOutsideClick);
+    window.addEventListener("click", handleOutsideClick, true);
 
     return () => {
-      window.removeEventListener("click", handleOutsideClick);
+      window.removeEventListener("click", handleOutsideClick, true);
     };
   }, [open,wrapperRef]);
 
-  // function onMouseEnter(){
-  //   setDropdown(true)
-  // }
-
-  // function onMouseLeave(){
-  //   setDropdown(false)
-  // }
-
   return (
-    <li
-      className="menu-items"
-      // onMouseEnter={onMouseEnter}
-      // onMouseLeave={onMouseLeave}
-    >
+    <li className="menu-items">
+      
       {/* if any of the links has dropdown links */}
       {navigationLinks.subLinks ? (
         <ul className="dropdowm" ref={wrapperRef}>
@@ -47,7 +36,10 @@ export default function MenuItems({ navigationLinks, index }) {
             className={open ? "isActive" : ""}
             aria-haspopup="menu"
             aria-expanded={open ? "true" : "false"}
-            onClick={()=> setOpen(!open)}
+            onClick={(e)=> {
+              e.stopPropagation()
+              setOpen(!open)
+            }}
           >
             {navigationLinks.title}{" "}
             <IoIosArrowDown className={open ? "menuIsActivated" : "menuIsDeactivated"}/>

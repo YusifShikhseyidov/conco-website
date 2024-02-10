@@ -5,7 +5,7 @@ import useFetch from "../hooks/useFetch";
 
 
 export default function Sponsors() {
-  const {data} = useFetch("/orderers?populate=*")
+  const {data, loading} = useFetch("/orderers?populate=*")
   const isTabletOrMobile = useMediaQuery({minWidth: 320, maxWidth: 768})
 
   return (
@@ -14,9 +14,10 @@ export default function Sponsors() {
         <h1 className="marquee-title">Sifarişçilər</h1>
 
       <div className="marquee-container">
+        {loading && <div className="loader"></div>}
         {isTabletOrMobile ? (
           <div className="logos-container">
-            {data.map((logo)=>(
+            {!loading && data && data?.map((logo)=>(
               <div className="marquee-images" key={logo.id}>
                 <img src={logo.attributes.orderer_logo.data[0].attributes.url} alt={`sifarisci-${logo.id}`} />
               </div>

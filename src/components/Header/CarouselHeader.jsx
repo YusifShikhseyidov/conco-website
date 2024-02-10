@@ -20,8 +20,6 @@ import useFetch from "../hooks/useFetch";
 export default function CarouselHeader() {
   const {data, loading, error} = useFetch("slider-images-headings?populate=*")
 
-  console.log(data)
-
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (

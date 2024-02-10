@@ -1,8 +1,8 @@
 import { JackInTheBox } from "react-awesome-reveal";
 import "./MainServices.css"
 
-
 export default function MainServices({title, mainServices}) {
+
   return (
     <section className="about-page_section-2">
       <h2>{title}</h2>

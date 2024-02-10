@@ -16,6 +16,7 @@
   justify-content: space-between;
   max-width: 1500px;
   margin: 0 auto;
+  position: relative;
 }
 
 .menus {
@@ -130,4 +131,134 @@
   margin-left: 5px;
   transform: rotate(0);
   transition: 0.2s;
+}
+
+
+/* navigation bar hamburger menu styles */
+.nav-area .hamburgerMenu {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  width: 2.25rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-area .hamburgerMenu span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: rotate(0);
+  width: 100%;
+  height: 2px;
+  background-color: var(--nav-text-color);
+  border-radius: 0.2rem;
+  transition: all 0.5s;
+}
+
+.nav-area .hamburgerMenu span:first-child{
+  top: 1.2em;
+}
+.nav-area .hamburgerMenu span:nth-child(2){
+  top: 0.5em;
+}
+.nav-area .hamburgerMenu span:last-child{
+  bottom: 1.2em;
+}
+
+.nav-area .hamburgerMenu span.lineMiddleSpin{
+  transform: rotate(45deg);
+  top: 15px;
+}
+
+.nav-area .hamburgerMenu span.lineTopSpin{
+  transform: rotate(-45deg);
+  top: 15px;
+}
+
+.nav-area .hamburgerMenu span.lineBottomSpin{
+  opacity: 0;
+}
+
+/* screen sizes styles */
+@media (max-width: 1740px){
+  .nav-area {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1224px){
+  .nav-area {
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 1119px){
+  .nav-area .logo-wrapper img{
+    width: 160px;
+  }
+
+  .nav-area .hamburgerMenu {
+    opacity: 1;
+  }
+
+  .menus {
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    opacity: 0;
+    z-index: -1;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: scaleY(0.4);
+    transform-origin: 100% 0%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menus.open{
+    opacity: 1;
+    z-index: 2;
+    transform: scaleY(1);
+    transform-origin: 100% 0%;
+  }
+
+  .menu-items {
+    width: 100%;
+  }
+
+  .menu-items > a{
+    text-align: center;
+  }
+
+  .menu-items .dropdowm > li{
+    justify-content: center;
+  }
+
+  .dropdown-nav-subelements{
+    min-width: 11rem;
+    top: 3rem;
+    right: 50%;
+    translate: 50%;
+    left: unset;
+  }
+}
+
+@media (max-width: 400px){
+  .nav-area .logo-wrapper img{
+    width: 140px;
+  }
+
+  .nav-area .hamburgerMenu {
+    right: 2rem;
+  }
 }

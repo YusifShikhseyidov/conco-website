@@ -38,3 +38,22 @@
     transform: scale(1);
   }
 }
+
+/* different screen sizes styles */
+@media (max-width: 1024px){
+
+  .certificates-section h2{
+    font-size: xx-large;
+  }
+
+  .certificates-section .certificates-container{
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .certificates-section .certificate-container{
+    width: 60%;
+  }
+}

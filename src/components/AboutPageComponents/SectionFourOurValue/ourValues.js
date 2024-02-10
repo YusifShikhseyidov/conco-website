@@ -1,6 +1,6 @@
 import ourValueimg1 from "./assets/bim.png"
 import ourValueimg2 from "./assets/agreement.png"
-import ourValueimg3 from "./assets/experience.png"
+import ourValueimg3 from "./assets/inIndustryFor.png"
 import ourValueimg4 from "./assets/management.png"
 import ourValueimg5 from "./assets/restoration.png"
 

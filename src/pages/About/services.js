@@ -1,35 +1,22 @@
+// main services logos
+import tikinti from "./assets/Tikinti.jpg"
+import esasli_temir from "./assets/Esasli-temir.jpg"
+import abide_berpasi from "./assets/Tarixi-abidelerin-berpasi.jpg"
+
 export const mainServices = [
   {
     name: 'Tikinti',
-    href: '/src/pages/About/assets/Tikinti.jpg',
+    href: tikinti,
     alt: 'tikinti'
   },
   {
     name: 'Əsaslı Təmir',
-    href: '/src/pages/About/assets/Esasli-temir.jpg',
+    href: esasli_temir,
     alt: 'əsaslı təmir'
   },
   {
     name: 'Tarixi Abidələrin Bərpası',
-    href: '/src/pages/About/assets/Tarixi-abidelerin-berpasi.jpg',
+    href: abide_berpasi,
     alt: 'tarixi abidələrin bərpası'
-  }
-]
-
-export const improvementPerspectives = [
-  {
-    name: 'Tikintidə texniki nəzarət',
-    href: '/src/pages/About/assets/texnikiNezaret.png',
-    alt: 'Texniki-Nezaret'
-  },
-  {
-    name: 'Yüngül Polad Konstruksiyaları',
-    href: '/src/pages/About/assets/poladkonstruksiyalar.png',
-    alt: 'Polad-Konstruksiyalar'
-  },    
-  {
-    name: 'Müasir texnologiylar vasitəsi ilə tikinti işlərinin təkmilləşdirilməsi',
-    href: '/src/pages/About/assets/tikintiTekmilleshdirme.png',
-    alt: 'Tikinti-Tekmilleshdirme'
   }
 ]

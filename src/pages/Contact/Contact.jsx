@@ -4,9 +4,10 @@ import { PiPhoneIncoming } from "react-icons/pi";
 import { GrMapLocation } from "react-icons/gr";
 
 function Contact() {
+  
   return (
     <main className="contact-page">
-        <h1>Əlaqə</h1>
+      <h1>Əlaqə</h1>
       <section className="contact-details">
         <div className="contact-phone-container">
           <a href="tel:(+994 12) 465 73 07">

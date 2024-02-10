@@ -14,7 +14,6 @@ import OngoingProjects from "./pages/Projects/OngoingProjects";
 import RestorationProjects from "./pages/Projects/RestorationProjects";
 import ErrorPage from "./pages/Error/ErrorPage";
 import ScrollTopButton from "./components/ScrollTopButton/ScrollTopButton";
-import Career from "./pages/Careers/Career";
 import Careers from "./pages/Careers/Careers";
 import CareersLayout from "./pages/Careers/CareersLayout";
 import Sponsors from "./components/Sponsors/Sponsors";
@@ -57,7 +56,6 @@ const router = createBrowserRouter(
       </Route>
       <Route path="careers" element={<CareersLayout />}>
         <Route index element={<Careers />} />
-        <Route path=":id" element={<Career />} />
       </Route>
       <Route path="contact" element={<Contact />} />
     </Route>
