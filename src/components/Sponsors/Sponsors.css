@@ -1,10 +1,11 @@
 .main-marquee-container{
   width: 100%;
   margin: 0 auto 10rem;
-  height: 63vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 4rem;
 }
 
@@ -14,11 +15,13 @@
 }
 
 .marquee-container{
-  height: 25rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
 }
 
 .marquee-images{
-  height: 25rem;
+  height: 20rem;
 }
 
 .marquee-container img{
@@ -63,7 +66,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    margin: 0 auto;
   }
 
   .main-marquee-container,

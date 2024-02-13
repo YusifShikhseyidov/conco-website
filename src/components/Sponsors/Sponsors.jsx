@@ -25,7 +25,7 @@ export default function Sponsors() {
             
           </div>
         ) : (
-          <Marquee speed={100} gradient={true} gradientWidth={500} pauseOnHover={true}>
+          <Marquee speed={100} gradient={true} gradientWidth={500}>
             {data.map((logo)=>(
               <div className="marquee-images" key={logo.id}>
                 <img src={logo.attributes.orderer_logo.data[0].attributes.url} alt={`sifarisci-${logo.id}`} />

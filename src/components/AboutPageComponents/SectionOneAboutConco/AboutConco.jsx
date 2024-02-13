@@ -15,7 +15,7 @@ export default function AboutConco() {
   
   return (
     <section className="about-page_section-1">
-      {loading && <div>loading...</div>}
+      {loading && <div className="loader"></div>}
       {!loading && data && (
         <>
         {data.map((aboutuscoverimg)=>(
