@@ -34,6 +34,7 @@
   min-height: 49dvh;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 4rem;
 }
 
 .svg-background {
@@ -61,10 +62,6 @@
 
 .svg-background-container div:hover{
   box-shadow: inset 0px 0px 53px 22px rgba(179, 179, 179, 0.3);
-}
-
-.svg-background-container div:last-child{
-  margin-bottom: 5rem;
 }
 
 .svg-background-container p::selection{
