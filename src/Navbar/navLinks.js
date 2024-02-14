@@ -17,7 +17,7 @@ export const navLinks = [
       },
       {
         title: 'Niyə Biz',
-        url: 'about/our-value'
+        url: 'about/why-us'
       },
       {
         title: 'Sertifikatlar',

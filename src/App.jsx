@@ -32,7 +32,7 @@ const router = createBrowserRouter(
           element={<Sponsors />}
         />
         <Route
-          path="our-value"
+          path="why-us"
           element={<OurValue />}
         />
         <Route
