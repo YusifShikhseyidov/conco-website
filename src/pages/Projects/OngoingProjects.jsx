@@ -23,8 +23,6 @@ import useFetch from "../../components/hooks/useFetch";
 export default function OngoingProjects() {
   const {data, loading} = useFetch("/ongoing-projects?populate=*")
 
-  console.log(data)
-
   const lenkeranPeshePhotos = [projectImage8, projectImage9, projectImage10];
   const hovsanPhotos = [projectImage11, projectImage12, projectImage13];
   const midaPhotos = [projectImage14, projectImage15, projectImage16];
@@ -50,7 +48,7 @@ export default function OngoingProjects() {
           )
         })}
 
-        {data.length === 0 && (
+        {!loading && data.length === 0 && (
           <>
             <SingleProject
               title="Lənkəran Peşə Liseyinin Yenidən qurulması"

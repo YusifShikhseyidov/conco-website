@@ -10,9 +10,6 @@ import "swiper/css/pagination";
 // import your styles
 import "./CarouselHeader.css";
 
-// import swiper-carousel images
-// import { imagesAndTitles } from "./images";
-
 // import data from api
 import { useState } from "react";
 import useFetch from "../hooks/useFetch";

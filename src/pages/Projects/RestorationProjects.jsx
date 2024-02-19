@@ -39,7 +39,7 @@ export default function RestorationProjects() {
           )
         })}
 
-        {data.length === 0 && (
+        {!loading && data.length === 0 && (
           <>
             <SingleProject title="Bakı Xanlar Evi" photos={bakiXanlarEvi} />
 
