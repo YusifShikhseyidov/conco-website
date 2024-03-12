@@ -20,6 +20,9 @@ export default function Careers() {
                 }
               )}
             </p>
+            <a href="mailto:info@conco.az" className="sendCVBtn">
+              CV Göndər
+            </a>
           </div>
         ))}
         </div>
