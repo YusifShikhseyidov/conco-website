@@ -22,6 +22,7 @@ import useFetch from "../../components/hooks/useFetch";
 
 export default function OngoingProjects() {
   const {data, loading} = useFetch("/ongoing-projects?populate=*")
+  const sortedData = [...data].sort((a,b)=> a.id - b.id)
 
   const lenkeranPeshePhotos = [projectImage8, projectImage9, projectImage10];
   const hovsanPhotos = [projectImage11, projectImage12, projectImage13];
@@ -37,7 +38,7 @@ export default function OngoingProjects() {
       <main className="projects-page_main-content">
 
         {loading && <div className="loader"></div>}
-        {!loading && data.length > 0 && data?.map((obj)=>{
+        {!loading && data.length > 0 && sortedData?.map((obj)=>{
           const imgs = obj.attributes.ongoing_project_imgs.data.map((img)=>img.attributes.url)
           return (
             <SingleProject 

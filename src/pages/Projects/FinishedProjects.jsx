@@ -5,6 +5,7 @@ import useFetch from "../../components/hooks/useFetch";
 
 export default function FinishedProjects() {
   const {data, loading} = useFetch("/finished-projects?populate=*")
+  const sortedData = [...data].sort((a,b)=> a.id - b.id)
 
   return (
     <>
@@ -14,7 +15,7 @@ export default function FinishedProjects() {
 
       <main className="projects-page_main-content">
         {loading && <div className="loader"></div>}
-        {!loading && data?.map((obj)=>{
+        {!loading && data && sortedData?.map((obj)=>{
           const imgs = obj.attributes.finished_project_imgs.data.map((img)=>img.attributes.url)
           return (
             <SingleProject 

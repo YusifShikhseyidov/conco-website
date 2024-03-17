@@ -15,6 +15,7 @@ import {
 
 export default function RestorationProjects() {
   const {data, loading} = useFetch("/restoration-projects?populate=*")
+  const sortedData = [...data].sort((a,b)=> a.id - b.id)
 
   const bakiXanlarEvi = [projectImage23, projectImage24, projectImage25];
   const shushaBinaKonservasiya = [projectImage26, projectImage27];
@@ -28,7 +29,7 @@ export default function RestorationProjects() {
       <main className="projects-page_main-content">
 
         {loading && <div className="loader"></div>}
-        {!loading && data.length > 0 && data?.map((obj)=>{
+        {!loading && data.length > 0 && sortedData?.map((obj)=>{
           const imgs = obj.attributes.restoration_project_imgs.data.map((img)=>img.attributes.url)
           return (
             <SingleProject 
