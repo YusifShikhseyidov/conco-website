@@ -75,8 +75,8 @@
 }
 
 .swiper-slide-active .swiper-heading,
-.swiper-slide-duplicate-active .swiper-heading {
-  animation: fadewithdelay 0.8s 0.8s ease both;
+.swiper-slide-duplicate-active .swiper-heading{
+  animation: fadewithdelay 0.8s 0.5s ease both;
 }
 
 @keyframes fadewithdelay {

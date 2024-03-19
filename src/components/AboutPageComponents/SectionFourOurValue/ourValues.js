@@ -1,4 +1,3 @@
-import ourValueimg1 from "./assets/bim.png"
 import ourValueimg2 from "./assets/agreement.png"
 import ourValueimg3 from "./assets/inIndustryFor.png"
 import ourValueimg4 from "./assets/management.png"
@@ -9,11 +8,6 @@ const companyFoundationYear = 2015;
 const inIndustryFor = currentDate - companyFoundationYear;
 
 export const ourValues = [
-  {
-    name: "BIM və digər tikinti texnologiyalarının tətbiqi",
-    alt: "BIM və digər tikinti texnologiyaları",
-    href: ourValueimg1,
-  },
   {
     name: "Sifarişçilərlə uğurlu əməkdaşlıq",
     alt: "Uğurlu əməkdaşlıq",

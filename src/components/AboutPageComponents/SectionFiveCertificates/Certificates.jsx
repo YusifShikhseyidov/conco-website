@@ -12,16 +12,16 @@ export default function Certificates() {
       <Fade cascade damping={0.2} triggerOnce={true}>
         <ul className="certificates-container">
           <li className="certificate-container">
-            <img src={crt1} alt="certificate" />
+            <img src={crt1} loading="lazy" alt="certificate" />
           </li>
           <li className="certificate-container">
-            <img src={crt2} alt="certificate" />
+            <img src={crt2} loading="lazy" alt="certificate" />
           </li>
           <li className="certificate-container">
-            <img src={crt3} alt="certificate" />
+            <img src={crt3} loading="lazy" alt="certificate" />
           </li>
           <li className="certificate-container">
-            <img src={crt4} alt="certificate" />
+            <img src={crt4} loading="lazy" alt="certificate" />
           </li>
         </ul>
       </Fade>

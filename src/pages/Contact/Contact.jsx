@@ -28,7 +28,7 @@ function Contact() {
         </div>
       </section>
       <section className="address-on-map">
-        <h3>Conco QSC Ofis</h3>
+        <h3>Conco QSC</h3>
         <div className="text-address">
           <GrMapLocation size={21} />
           <p>

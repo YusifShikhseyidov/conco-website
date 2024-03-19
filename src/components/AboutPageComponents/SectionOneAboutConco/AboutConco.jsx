@@ -20,7 +20,7 @@ export default function AboutConco() {
         <>
         {data.map((aboutuscoverimg)=>(
           <div className="about-page_company-cover" key={aboutuscoverimg.id}>
-            <img src={aboutuscoverimg.attributes.conco_about_us_cover_img.data.attributes.url} alt="company-cover" />
+            <img src={aboutuscoverimg.attributes.conco_about_us_cover_img.data.attributes.url} loading="lazy" alt="company-cover" />
           </div>
 
         ))}

@@ -19,7 +19,7 @@ export default function SingleProject({photos, title}) {
           <ul className="single-project_images-wrapper">
             {photos.map((photo, index)=>(
               <li key={index}>
-                <img src={photo} alt="xezer-bine-school" />
+                <img src={photo} loading="lazy" alt="xezer-bine-school" />
               </li>
             ))}
           </ul>

@@ -37,7 +37,7 @@ export default function CarouselHeader() {
         {!loading && !error && data && sortedData?.map((obj, index) => (
           <SwiperSlide className="swiper-slide" key={obj.id}>
             <h1 className={`swiper-no-swiping ${activeIndex === index ? "swiper-heading" : ""}`}>{obj.attributes.slider_heading}</h1>
-            <img src={obj.attributes.slider_img.data[0].attributes.url} alt={`slide-${obj.id}`} />
+            <img src={obj.attributes.slider_img.data[0].attributes.url} loading="lazy" alt={`slide-${obj.id}`} />
           </SwiperSlide>
         ))}
       </Swiper>
