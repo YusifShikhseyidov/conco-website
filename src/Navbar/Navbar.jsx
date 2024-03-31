@@ -55,7 +55,6 @@ function Header() {
           </ul>
         </nav>
       </header>
-      <Breadcrumbs />
 
       <main>
         <Outlet />

@@ -1,6 +1,5 @@
 import "./OurValue.css";
 import { ourValues } from "./ourValues";
-// import { JackInTheBox } from "react-awesome-reveal";
 
 export default function OurValue() {
   const title = "NIYƏ MƏHZ BIZ?!";
@@ -11,8 +10,9 @@ export default function OurValue() {
         <h2>{title}</h2>
 
         <div className="about-page_our-value">
-          {ourValues.map((value, index) => (
+          {ourValues.map((value, index) => {
             
+            return (
               <div className="our-value-container" key={index}>
                 <div className="our-value-logo-container">
                   <img src={value.href} alt={value.alt} />
@@ -22,8 +22,8 @@ export default function OurValue() {
                   <h3>{value.name}</h3>
                 </div>
               </div>
-           
-          ))}
+            );
+          })}
         </div>
       </section>
     </div>

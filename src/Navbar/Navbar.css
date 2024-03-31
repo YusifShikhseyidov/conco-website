@@ -25,7 +25,6 @@
   flex-wrap: wrap;
   list-style: none;
   column-gap: 10px;
-  text-transform: uppercase;
 }
 
 .menu-items {

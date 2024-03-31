@@ -1,54 +1,54 @@
 export const navLinks = [
   {
-    title: 'Əsas Səhifə',
+    title: 'ƏSAS SƏHİFƏ',
     url: '/'
   },
   {
-    title: 'Haqqımızda',
-    url: 'about',
+    title: 'HAQQIMIZDA',
+    url: 'haqqımızda',
     subLinks: [
       {
-        title: 'Haqqımızda',
-        url: 'about/about-us'
+        title: 'HAQQIMIZDA',
+        url: 'haqqımızda/bizim-haqda'
       },
       {
-        title: 'Sifarişçilər',
-        url: 'about/sponsors'
+        title: 'SİFARİŞÇİLƏR',
+        url: 'haqqımızda/sponsorlar'
       },
       {
-        title: 'Niyə Biz',
-        url: 'about/why-us'
+        title: 'NİYƏ BİZ',
+        url: 'haqqımızda/niyə-biz'
       },
       {
-        title: 'Sertifikatlar',
-        url: 'about/certificates'
+        title: 'SERTİFİKATLAR',
+        url: 'haqqımızda/sertifikatlar'
       },
     ]
   },
   {
-    title: 'Layihələr',
-    url: 'projects',
+    title: 'LAYİHƏLƏR',
+    url: 'layihələr',
     subLinks: [
       {
-        title: 'Təhvil Verilmiş Layihələr',
-        url: 'projects/finished-projects'
+        title: 'TƏHVİL VERİLMİŞ LAYİHƏLƏR',
+        url: 'layihələr/təhvil-verilmiş-layihələr'
       },
       {
-        title: 'Davam Edən Layihələr',
-        url: 'projects/ongoing-projects'
+        title: 'DAVAM EDƏN LAYİHƏLƏR',
+        url: 'layihələr/davam-edən-layihələr'
       },
       {
-        title: 'Restavrasiya Layihələri',
-        url: 'projects/restoration-projects'
+        title: 'BƏRPA LAYİHƏLƏRİ',
+        url: 'layihələr/bərpa-layihələri'
       }
     ]
   },
   {
-    title: 'Vakansiya',
-    url: 'careers'
+    title: 'VAKANSİYA',
+    url: 'vakansiyalar'
   },
   {
-    title: 'Əlaqə',
-    url: 'contact'
+    title: 'ƏLAQƏ',
+    url: 'əlaqə'
   }
 ]

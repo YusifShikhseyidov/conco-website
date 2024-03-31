@@ -1,9 +1,9 @@
 .about-page_section-1 {
   width: 100%;
-  padding: 0.5rem 0 0;
   display: flex;
   gap: 2rem;
   justify-content: space-evenly;
+  margin-top: 5rem;
 }
 
 .about-page_section-1 .about-page_company-cover{

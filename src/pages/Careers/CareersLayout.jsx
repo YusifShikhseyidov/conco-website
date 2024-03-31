@@ -14,7 +14,7 @@ export default function CareersLayout() {
         <h1>
           Vakansiyalar
         </h1>
-        {data.length===0 && !loading && <p>Hal-hazirda vakansiya movcud deyil</p>}
+        {data.length===0 && !loading && <p>Hal-hazırda vakansiya mövcud deyil</p>}
       </header>
       <main className="careers-layout-main">
         <Outlet/>

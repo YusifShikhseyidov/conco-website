@@ -9,14 +9,16 @@ import "swiper/css/pagination";
 // import your styles
 import "./CarouselHeader.css";
 
-// import data from api
 import { useState } from "react";
+
+// import data from api
 import useFetch from "../hooks/useFetch";
 
 export default function CarouselHeader() {
   const {data, loading, error} = useFetch("slider-images-headings?populate=*")
   const sortedData = [...data].sort((a,b)=> a.id - b.id)
 
+  // this is for controlling swiper title animation
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (

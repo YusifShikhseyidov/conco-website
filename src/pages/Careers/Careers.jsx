@@ -27,7 +27,7 @@ export default function Careers() {
         ))}
         </div>
       ) : data.length === 0 || loading ? (
-        <div style={{height: "auto", minHeight: "49dvh", width: "80%", margin: "0 auto"}}>
+        <div style={{height: "auto", minHeight: "54dvh", width: "80%", margin: "0 auto"}}>
           <div className="svg-background" />
         </div>
       ) : error && "error occured"
