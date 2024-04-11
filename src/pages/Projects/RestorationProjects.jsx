@@ -24,7 +24,7 @@ export default function RestorationProjects() {
   return (
     <>
       <header className="projects-page_header">
-        <h1 className="main-heading">Bərpa Olunan Layihələr</h1>
+        <h1 className="main-heading">TARİXİ BİNALARIN BƏRPASI</h1>
       </header>
       <main className="projects-page_main-content">
 
