@@ -1,0 +1,56 @@
+{
+  "navlinks": [
+    {
+      "title": "HOME",
+      "url": "/"
+    },
+    {
+      "title": "ABOUT US",
+      "url": "about",
+      "subLinks": [
+        {
+          "title": "ABOUT US",
+          "url": "about/about-us"
+        },
+        {
+          "title": "SPONSORS",
+          "url": "about/sponsors"
+        },
+        {
+          "title": "WHY US",
+          "url": "about/why-us"
+        },
+        {
+          "title": "CERTIFICATES",
+          "url": "about/certificates"
+        }
+      ]
+    },
+    {
+      "title": "PROJECTS",
+      "url": "projects",
+      "subLinks": [
+        {
+          "title": "FINISHED PROJECTS",
+          "url": "projects/finished-projects"
+        },
+        {
+          "title": "ONGOING PROJECTS",
+          "url": "projects/ongoing-projects"
+        },
+        {
+          "title": "RESTORATION PROJECTS",
+          "url": "projects/restoration-projects"
+        }
+      ]
+    },
+    {
+      "title": "VACANCY",
+      "url": "vacancy"
+    },
+    {
+      "title": "CONTACT",
+      "url": "contact"
+    }
+  ]
+}

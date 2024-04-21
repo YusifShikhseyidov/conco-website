@@ -25,39 +25,39 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Navbar />} errorElement={<ErrorPage />}>
       <Route index element={<Home />} />
-      <Route path="haqqımızda" element={<About />} >
-        <Route path="bizim-haqda" element={<AboutConco />} />
+      <Route path="about" element={<About />} >
+        <Route path="about-us" element={<AboutConco />} />
         <Route
-          path="sponsorlar"
+          path="sponsors"
           element={<Sponsors />}
         />
         <Route
-          path="niyə-biz"
+          path="why-us"
           element={<OurValue />}
         />
         <Route
-          path="sertifikatlar"
+          path="certificates"
           element={<Certificates />}
         />
       </Route>
-      <Route path="layihələr" element={<Projects />}>
+      <Route path="projects" element={<Projects />}>
         <Route
-          path="/layihələr/təhvil-verilmiş-layihələr"
+          path="/projects/finished-projects"
           element={<FinishedProjects />}
         />
         <Route
-          path="/layihələr/davam-edən-layihələr"
+          path="/projects/ongoing-projects"
           element={<OngoingProjects />}
         />
         <Route
-          path="/layihələr/bərpa-layihələri"
+          path="/projects/restoration-projects"
           element={<RestorationProjects />}
         />
       </Route>
-      <Route path="vakansiyalar" element={<CareersLayout />}>
+      <Route path="vacancy" element={<CareersLayout />}>
         <Route index element={<Careers />} />
       </Route>
-      <Route path="əlaqə" element={<Contact />} />
+      <Route path="contact" element={<Contact />} />
     </Route>
   )
 );
