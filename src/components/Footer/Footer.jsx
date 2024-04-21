@@ -10,7 +10,7 @@ export default function Footer() {
         <span>
           AZ1075 Nərimanov rayonu, Əhməd Rəcəbli küç. 2/1 Bakı, Azərbaycan
         </span>
-        <span>Copyright © {currentYear} "CONCO QSC"</span>
+        <span>Copyright &copy; {currentYear} "CONCO QSC"</span>
       </div>
     </footer>
   );
