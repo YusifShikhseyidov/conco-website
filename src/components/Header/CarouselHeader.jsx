@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 // import data fetched from api
 import useFetch from "../hooks/useFetch";
 
-// Icons
+// Arrow Icons
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 export default function CarouselHeader() {
@@ -14,6 +14,7 @@ export default function CarouselHeader() {
   const sortedData = [...data].sort((a,b)=> a.id - b.id)
 
   console.log(sortedData)
+  console.log(data)
 
   // active slide
   const [activeIndex, setActiveIndex] = useState(0)
@@ -28,10 +29,13 @@ export default function CarouselHeader() {
   }
 
   useEffect(()=>{
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       slideRight()
     }, 4000);
-  })
+
+    // cleanup function to clear the timer
+    return ()=> clearTimeout(timer)
+  }, [activeIndex])
 
   return (
     <div className="slider">
