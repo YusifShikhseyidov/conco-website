@@ -3,10 +3,20 @@ import {navLinks} from './navLinks'
 import MenuItems from './MenuItems'
 import conco_logo from './concologo-white-removedbg.png'
 import './Navbar.css'
-import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs'
 import { useState, useEffect, useRef } from 'react'
+import { useLocale } from '../components/LocaleContext'
+
+import { useTranslation } from 'react-i18next'
 
 function Header() {
+
+  const {t, i18n} = useTranslation('common', {useSuspense: true})
+
+  const navlinks = t("navlinks", {returnObjects: true})
+  console.log(navlinks)
+
+  const {changeLocale} = useLocale()
+
   const [show, setShow] = useState(false)
   const hamburgerMenuRef = useRef(null)
 
@@ -48,11 +58,19 @@ function Header() {
           </div>
 
           <ul className={`menus ${show ? "open" : ""}`}>
-            {navLinks &&
-              navLinks.map((navLink, index) => {
+            {navlinks &&
+              navlinks.map((navLink, index) => {
                 return <MenuItems navigationLinks={navLink} key={index} />;
               })}
           </ul>
+
+          {/* language switcher */}
+          <select onChange={(e)=>changeLocale(e.target.value)}>
+            <option value="az-Latn">AZ</option>
+            <option value="en">EN</option>
+            <option value="ru-RU">RU</option>
+          </select>
+
         </nav>
       </header>
 
