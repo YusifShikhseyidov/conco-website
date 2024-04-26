@@ -1,4 +1,4 @@
-// import your styles
+// import styles
 import "./CarouselHeader.css";
 
 import { useEffect, useState } from "react";

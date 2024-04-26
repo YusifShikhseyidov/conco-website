@@ -1,11 +1,11 @@
 import { Link, Outlet } from 'react-router-dom'
-import {navLinks} from './navLinks'
 import MenuItems from './MenuItems'
 import conco_logo from './concologo-white-removedbg.png'
 import './Navbar.css'
 import { useState, useEffect, useRef } from 'react'
+// useLocale is needed for translation that is coming from backend
 import { useLocale } from '../components/LocaleContext'
-
+// useTranslation is needed for static content translation made using i18n
 import { useTranslation } from 'react-i18next'
 
 function Header() {
@@ -13,7 +13,6 @@ function Header() {
   const {t, i18n} = useTranslation('common', {useSuspense: true})
 
   const navlinks = t("navlinks", {returnObjects: true})
-  console.log(navlinks)
 
   const {changeLocale} = useLocale()
 

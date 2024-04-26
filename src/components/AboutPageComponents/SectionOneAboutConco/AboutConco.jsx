@@ -1,5 +1,4 @@
 import MainServices from "../SectionTwoMainServices/MainServices";
-import { mainServices } from "../../../pages/About/services";
 // the hook to fetch data
 import useFetch from "../../hooks/useFetch";
 // styles
@@ -7,19 +6,25 @@ import "./AboutConco.css"
 
 // import react-awesome-reveal Zoom effect
 import { Zoom } from "react-awesome-reveal";
-
+// useLocale is needed for translation that is coming from backend
 import { useLocale } from "../../LocaleContext";
+// useTranslation is needed for static content translation made using i18n
+import { useTranslation } from "react-i18next";
 
 export default function AboutConco() {
   const {locale} = useLocale()
 
   // fetch data using useFetch hook for relevant collection-type
   const {data,loading} = useFetch(`/about-us-collection-types?locale=${locale}&populate=*`)
-  console.log(data)
+
+  // translate static content
+  const {t, i18n} = useTranslation("about", {useSuspense: true})
 
   // define title for main services component
-  const title = "Əsas Fəaliyyət İstiqamətləri";
-  
+  const title = t('maindirectionsofwork');
+  // translated names for main services
+  const mainServicesNames = t("mainservices", {returnObjects: true})
+
   return (
     <section className="about-page_section-1">
       {loading && <div className="loader"></div>}
@@ -32,7 +37,7 @@ export default function AboutConco() {
 
           ))}
           <div className="about_page-about_us-keeper">
-            <h1 className="about-page_title">Haqqımızda</h1>
+            <h1 className="about-page_title">{t('aboutpagetitle')}</h1>
 
             {data.map((aboutus)=>(
               <p className="about-page_about-conco" key={aboutus.id}>
@@ -43,14 +48,14 @@ export default function AboutConco() {
 
             <hr />
             <Zoom triggerOnce={true}>
-              <p className="about-page_our-philosophy_1">hədsiz mükəmməllik</p>
+              <p className="about-page_our-philosophy_1">{t('philosophy1')}</p>
             </Zoom>
             <p className="about-page_our-philosophy_2">
-              bizim iş fəlsəfəmizdir
+              {t('philosophy2')}
             </p>
             <hr />
 
-            <MainServices title={title} mainServices={mainServices} />
+            <MainServices title={title} mainServicesNames={mainServicesNames} />
           </div>
         </>
       )}

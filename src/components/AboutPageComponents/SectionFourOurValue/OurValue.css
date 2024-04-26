@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
   place-content: center;
-  margin-top: 5rem;
+  margin-top: 8rem;
   column-gap: 2rem;
 }
 
