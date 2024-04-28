@@ -127,13 +127,7 @@
   padding: 2px;
 }
 
-
-
-
-
-
-
-/* HTML: <div class="loader"></div> */
+/************************ HTML: <div class="loader"></div> ************************/
 .loader {
   width: 20px;
   aspect-ratio: 1;
@@ -179,7 +173,7 @@
 @media (min-width: 1120px) and (max-width: 1919px) {
 
   .slider {
-    height: 91.5dvh;
+    height: 88.3dvh;
   }
 
   .slider-wrapper .slider-card .card-title {
@@ -194,7 +188,7 @@
 @media (max-width: 1119px) {
 
   .slider {
-    height: 86.8dvh;
+    height: 84.4dvh;
   }
 
   .slider-wrapper .slider-card .card-title {
@@ -220,6 +214,12 @@
 
   .slider-wrapper .carousel-pagination{
     right: 25%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+  .slider {
+    height: 85dvh;
   }
 }
 

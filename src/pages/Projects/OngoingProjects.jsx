@@ -19,10 +19,18 @@ import {
 import SingleProject from "../../components/SingleProjectComponent/SingleProject";
 import Footer from "../../components/Footer/Footer";
 import useFetch from "../../components/hooks/useFetch";
+// useLocale is needed for translation that is coming from backend
+import { useLocale } from "../../components/LocaleContext";
+
+// useTranslation is needed for static content translation made using i18n
+import { useTranslation } from "react-i18next";
 
 export default function OngoingProjects() {
-  const {data, loading} = useFetch("/ongoing-projects?populate=*")
+  const {locale} = useLocale()
+  const {data, loading} = useFetch(`/ongoing-projects?locale=${locale}&populate=*`)
   const sortedData = [...data].sort((a,b)=> a.id - b.id)
+
+  const {t} = useTranslation("projects", {useSuspense: true})
 
   const lenkeranPeshePhotos = [projectImage8, projectImage9, projectImage10];
   const hovsanPhotos = [projectImage11, projectImage12, projectImage13];
@@ -33,7 +41,7 @@ export default function OngoingProjects() {
   return (
     <>
       <header className="projects-page_header">
-        <h1 className="main-heading">Davam edən layihələr</h1>
+        <h1 className="main-heading">{t('ongoing-projects')}</h1>
       </header>
       <main className="projects-page_main-content">
 

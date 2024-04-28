@@ -6,15 +6,17 @@ import { useEffect, useState } from "react";
 // import data fetched from api
 import useFetch from "../hooks/useFetch";
 
+// useLocale is needed for translation that is coming from backend
+import { useLocale } from "../LocaleContext";
+
 // Arrow Icons
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 export default function CarouselHeader() {
-  const {data, loading, error} = useFetch("slider-images-headings?populate=*")
-  const sortedData = [...data].sort((a,b)=> a.id - b.id)
+  const {locale} = useLocale()
 
-  console.log(sortedData)
-  console.log(data)
+  const {data, loading, error} = useFetch(`slider-images-headings?locale=${locale}&populate=*`)
+  const sortedData = [...data].sort((a,b)=> a.id - b.id)
 
   // active slide
   const [activeIndex, setActiveIndex] = useState(0)

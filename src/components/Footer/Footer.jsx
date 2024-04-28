@@ -1,16 +1,19 @@
+import { useTranslation } from "react-i18next";
 import "./Footer.css";
 
 export default function Footer() {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
 
+  const {t} = useTranslation("footer", {useSuspense:true})
+
   return (
     <footer className="footer-container">
       <div className="info-box">
         <span>
-          AZ1075 Nərimanov rayonu, Əhməd Rəcəbli küç. 2/1 Bakı, Azərbaycan
+          {t('address')}
         </span>
-        <span>Copyright &copy; {currentYear} "CONCO QSC"</span>
+        <span>Copyright &copy; {currentYear} "{t('conco-qsc')}"</span>
       </div>
     </footer>
   );

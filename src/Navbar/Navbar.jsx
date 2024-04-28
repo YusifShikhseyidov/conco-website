@@ -7,14 +7,20 @@ import { useState, useEffect, useRef } from 'react'
 import { useLocale } from '../components/LocaleContext'
 // useTranslation is needed for static content translation made using i18n
 import { useTranslation } from 'react-i18next'
+// globe icon for language menu
+import { CiGlobe } from "react-icons/ci";
+// placement of the language menu according to screen size
+import { useMediaQuery } from 'react-responsive'
 
 function Header() {
 
-  const {t, i18n} = useTranslation('common', {useSuspense: true})
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1119px)' })
+
+  const {t} = useTranslation('common', {useSuspense: true})
 
   const navlinks = t("navlinks", {returnObjects: true})
 
-  const {changeLocale} = useLocale()
+  const {locale, changeLocale} = useLocale()
 
   const [show, setShow] = useState(false)
   const hamburgerMenuRef = useRef(null)
@@ -64,11 +70,25 @@ function Header() {
           </ul>
 
           {/* language switcher */}
-          <select onChange={(e)=>changeLocale(e.target.value)}>
-            <option value="az-Latn">AZ</option>
-            <option value="en">EN</option>
-            <option value="ru-RU">RU</option>
-          </select>
+          {isTabletOrMobile ? (
+            <div className="languageMenuWrapper">
+              <CiGlobe className='globe-icon' strokeWidth={0.5} />
+              <select value={locale} className='langMenu' onChange={(e)=>changeLocale(e.target.value)}>
+                <option value="az-Latn">AZ</option>
+                <option value="en">EN</option>
+                <option value="ru-RU">RU</option>
+              </select>
+            </div>
+          ) : (
+            <div className="langMenuWrapper">
+              <CiGlobe className='globe-icon' strokeWidth={0.5} />
+              <select value={locale} className='langMenu' onChange={(e)=>changeLocale(e.target.value)}>
+                <option value="az-Latn">AZ</option>
+                <option value="en">EN</option>
+                <option value="ru-RU">RU</option>
+              </select>
+            </div>
+          )}
 
         </nav>
       </header>

@@ -11,7 +11,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
   fallbackLng: 'az-Latn',
   debug: false,
   // we can have multiple namespaces in case we want to divide a huge translation into smaller pieces and load them on demand
-  ns: ['common', 'home', 'about', 'projects', 'vacancy', 'contact'],
+  ns: ['common', 'about', 'projects', 'vacancy', 'contact', 'footer'],
   interpolation:{
     escapeValue: false,
     formatSeparator: ",",

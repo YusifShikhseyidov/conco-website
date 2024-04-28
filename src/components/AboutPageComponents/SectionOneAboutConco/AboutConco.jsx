@@ -18,7 +18,7 @@ export default function AboutConco() {
   const {data,loading} = useFetch(`/about-us-collection-types?locale=${locale}&populate=*`)
 
   // translate static content
-  const {t, i18n} = useTranslation("about", {useSuspense: true})
+  const {t} = useTranslation("about", {useSuspense: true})
 
   // define title for main services component
   const title = t('maindirectionsofwork');

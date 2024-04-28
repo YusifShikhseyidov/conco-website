@@ -22,7 +22,7 @@
 
 /* main section styling */
 .careers-layout-main{
-  background-image: url("./assets/repeating-triangles.svg");
+  background-image: url("/repeating-triangles.svg");
 }
 
 .svg-background-container {
@@ -38,7 +38,7 @@
 }
 
 .svg-background {
-  background-image: url("./assets/JobHunt.gif");
+  background-image: url("/JobHunt.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

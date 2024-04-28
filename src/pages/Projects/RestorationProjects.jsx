@@ -1,5 +1,9 @@
 import Footer from "../../components/Footer/Footer";
 import useFetch from "../../components/hooks/useFetch";
+// useLocale is needed for translation that is coming from backend
+import { useLocale } from "../../components/LocaleContext";
+// useTranslation is needed for static content translation made using i18n
+import { useTranslation } from "react-i18next";
 import SingleProject from "../../components/SingleProjectComponent/SingleProject";
 
 import {
@@ -14,8 +18,11 @@ import {
 } from "./projectsImages";
 
 export default function RestorationProjects() {
-  const {data, loading} = useFetch("/restoration-projects?populate=*")
+  const {locale} = useLocale()
+  const {data, loading} = useFetch(`/restoration-projects?locale=${locale}&populate=*`)
   const sortedData = [...data].sort((a,b)=> a.id - b.id)
+
+  const {t} = useTranslation("projects", {useSuspense: true})
 
   const bakiXanlarEvi = [projectImage23, projectImage24, projectImage25];
   const shushaBinaKonservasiya = [projectImage26, projectImage27];
@@ -24,7 +31,7 @@ export default function RestorationProjects() {
   return (
     <>
       <header className="projects-page_header">
-        <h1 className="main-heading">TARİXİ BİNALARIN BƏRPASI</h1>
+        <h1 className="main-heading">{t('restoration-projects')}</h1>
       </header>
       <main className="projects-page_main-content">
 
