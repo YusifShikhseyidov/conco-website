@@ -184,12 +184,14 @@
 }
 
 /********************************************* language selection menu styles *********************************************/
+/* classname for lang select menu in screen size max-width: 1119px */
 .languageMenuWrapper{
   position: absolute;
   top: 4rem;
   left: 3.75rem;
 }
 
+/* classname for lang select menu in screen size min-width: 1119px */
 .langMenuWrapper{
   position: relative;
 }
@@ -210,6 +212,7 @@
   appearance: none;
   border: none;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /****************************************************** screen sizes styles *********************************************/

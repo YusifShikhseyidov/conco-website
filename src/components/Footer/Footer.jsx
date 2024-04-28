@@ -10,9 +10,6 @@ export default function Footer() {
   return (
     <footer className="footer-container">
       <div className="info-box">
-        <span>
-          {t('address')}
-        </span>
         <span>Copyright &copy; {currentYear} "{t('conco-qsc')}"</span>
       </div>
     </footer>
