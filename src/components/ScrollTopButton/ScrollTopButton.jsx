@@ -15,43 +15,15 @@ export default function ScrollTopButton() {
     });
   }, []);
 
-  const TIMINGFUNC_MAP = {
-    linear: (t) => t,
-    "ease-in": (t) => t * t,
-    "ease-out": (t) => t * (2 - t),
-    "ease-in-out": (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t),
-  };
-
-  function scrollTopSmooth(initY, duration = 300, timingName = "linear") {
-    const timingFunc = TIMINGFUNC_MAP[timingName];
-    let start = null;
-    const step = (timestamp) => {
-      start = start || timestamp;
-      const progress = timestamp - start,
-        // Growing from 0 to 1
-        time = Math.min(1, (timestamp - start) / duration);
-
-      window.scrollTo(0, initY - timingFunc(time) * initY);
-      if (progress < duration) {
-        window.requestAnimationFrame(step);
-      }
-    };
-
-    window.requestAnimationFrame(step);
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }
 
-  // Subscribe any element with ".scrollup-container"
-  Array.from(document.querySelectorAll(".scrollup-container")).forEach(
-    (btn) => {
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        scrollTopSmooth(window.scrollY, 2000, "ease-in-out");
-      });
-    }
-  );
-
   return (
-    <div className={`scrollup-container ${showButton ? "show" : ""}`}>
+    <div className={`scrollup-container ${showButton ? "show" : ""}`} onClick={scrollToTop}>
       {showButton && <SlArrowUp className="arrow-icon" />}
     </div>
   );
