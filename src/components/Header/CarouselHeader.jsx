@@ -21,6 +21,9 @@ export default function CarouselHeader() {
   // active slide
   const [activeIndex, setActiveIndex] = useState(0)
 
+  // state to trigger card title bottom line animation
+  const [animate,setAnimate] = useState(false)
+
   // functions to set sliding to left & right
   const slideLeft = ()=>{
     activeIndex===0 ? setActiveIndex(sortedData.length-1) : setActiveIndex(activeIndex-1)
@@ -31,12 +34,16 @@ export default function CarouselHeader() {
   }
 
   useEffect(()=>{
+    setAnimate(true)
+    const animationTimer = setTimeout(() => {
+      setAnimate(false);
+    }, 3000);
     const timer = setTimeout(() => {
       slideRight()
     }, 4000);
 
     // cleanup function to clear the timer
-    return ()=> clearTimeout(timer)
+    return ()=> clearTimeout(timer, animationTimer)
   }, [activeIndex])
 
   return (
@@ -47,10 +54,11 @@ export default function CarouselHeader() {
         {/* map data to slides */}
         {!loading && !error && data && sortedData?.map((obj, index) => (
           <div className={index===activeIndex ? 'slider-card slider-card_active' : 'slider-card'} key={obj.id}>
-            <img src={obj.attributes.slider_img.data[0].attributes.url} loading="lazy" alt={`slide-${obj.id}`} />
+            <div className="slider-image" style={{backgroundImage: `url(${obj.attributes.slider_img.data[0].attributes.url})`}}></div>
             <div className="card-overlay">
-              <h1 className='card-title'>
+              <h1 className={`card-title ${animate ? 'animate' : ''}`}>
                 {obj.attributes.slider_heading}
+                <div className="line" />
               </h1>
             </div>
           </div>
