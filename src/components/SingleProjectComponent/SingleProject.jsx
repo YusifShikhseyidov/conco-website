@@ -1,5 +1,7 @@
 import { Fade } from "react-awesome-reveal";
 
+import { TbZoomPan } from "react-icons/tb";
+
 import "./SingleProject.css";
 
 export default function SingleProject({photos, title}) {
@@ -16,13 +18,20 @@ export default function SingleProject({photos, title}) {
         </Fade>
 
         <Fade direction="right" triggerOnce={true}>
-          <ul className="single-project_images-wrapper">
+          <div className="singleImageWrapper">
+            <img src={photos[0]} loading="lazy" alt={photos[0]} />
+            <div className="magnifier-wrapper">
+              <TbZoomPan className="magnifier-icon" />
+            </div>
+          </div>
+          {/* tomorrow start by adding modal from mui */}
+          {/* <ul className="single-project_images-wrapper">
             {photos.map((photo, index)=>(
               <li key={index}>
                 <img src={photo} loading="lazy" alt={photo} />
               </li>
             ))}
-          </ul>
+          </ul> */}
         </Fade>
       </section>
       
