@@ -8,8 +8,8 @@ export default function SingleProject({photos, title}) {
     <>
       <section className="single-project_main-container">
         <Fade direction="left" triggerOnce={true}>
-          <div className="single-project_text-btn-container">
-            <p className="single-project_text-wrapper">
+          <div className="single-project_text-container">
+            <p className="single-project_text-element">
               {title}
             </p>
           </div>
@@ -19,7 +19,7 @@ export default function SingleProject({photos, title}) {
           <ul className="single-project_images-wrapper">
             {photos.map((photo, index)=>(
               <li key={index}>
-                <img src={photo} loading="lazy" alt="xezer-bine-school" />
+                <img src={photo} loading="lazy" alt={photo} />
               </li>
             ))}
           </ul>

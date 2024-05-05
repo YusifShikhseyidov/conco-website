@@ -10,7 +10,7 @@
   background-color: #01579b;
 }
 
-.single-project_text-btn-container{
+.single-project_text-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@
   margin-top: 2rem;
 }
 
-.single-project_text-wrapper {
+.single-project_text-element {
   width: 100%;
   font-size: 30px;
   font-weight: 700;
@@ -55,14 +55,3 @@
   border: none;
   background-clip: border-box;
 }
-
-.single-project_extra-content-box{
-  display: flex;
-  gap: 2rem;
-  width: 100%;
-  height: auto;
-  padding: 3rem;
-  margin: -10rem 0 5rem;
-  background-color: #01579b;
-}
-
