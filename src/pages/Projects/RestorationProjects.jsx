@@ -17,6 +17,11 @@ import {
   projectImage30,
 } from "./projectsImages";
 
+
+// loading animation
+import 'ldrs/trefoil'
+
+
 export default function RestorationProjects() {
   const {locale} = useLocale()
   const {data, loading} = useFetch(`/restoration-projects?locale=${locale}&populate=*`)
@@ -35,7 +40,7 @@ export default function RestorationProjects() {
       </header>
       <main className="projects-page_main-content">
 
-        {loading && <div className="loader"></div>}
+        {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b"></l-trefoil>}
         {!loading && data.length > 0 && sortedData?.map((obj)=>{
           const imgs = obj.attributes.restoration_project_imgs.data.map((img)=>img.attributes.url)
           return (

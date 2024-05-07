@@ -1,5 +1,7 @@
 // import styles
 import "./CarouselHeader.css";
+// loading animation
+import 'ldrs/trefoil'
 
 import { useEffect, useState } from "react";
 
@@ -42,13 +44,13 @@ export default function CarouselHeader() {
       slideRight()
     }, 4000);
 
-    // cleanup function to clear the timer
+    // cleanup function to clear the timers
     return ()=> clearTimeout(timer, animationTimer)
   }, [activeIndex])
 
   return (
     <div className="slider">
-      {loading && <div className="loader"></div>}
+      {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b"></l-trefoil>}
       {error && <div>error...</div>}
       <div className="slider-wrapper">
         {/* map data to slides */}

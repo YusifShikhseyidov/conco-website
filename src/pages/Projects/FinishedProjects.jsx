@@ -7,6 +7,9 @@ import { useLocale } from "../../components/LocaleContext";
 import { useTranslation } from "react-i18next";
 // U can use react-spring library for smooth transition appear and diisappear of the divs for extra photos example of which is at codesandbox.io
 
+// loading animation
+import 'ldrs/trefoil'
+
 export default function FinishedProjects() {
   const {locale} = useLocale()
 
@@ -23,7 +26,7 @@ export default function FinishedProjects() {
       </header>
 
       <main className="projects-page_main-content">
-        {loading && <div className="loader"></div>}
+        {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b"></l-trefoil>}
         {!loading && data && sortedData?.map((obj)=>{
           const imgs = obj.attributes.finished_project_imgs.data.map((img)=>img.attributes.url)
           return (

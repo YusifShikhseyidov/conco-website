@@ -142,37 +142,6 @@
   padding: 2px;
 }
 
-/************************ HTML: <div class="loader"></div> ************************/
-.loader {
-  width: 20px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #000;
-  box-shadow: 0 0 0 0 #0004;
-  animation: l2 1.5s infinite linear;
-  position: relative;
-  margin: 5rem auto 0;
-}
-.loader:before,
-.loader:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  box-shadow: 0 0 0 0 #0004;
-  animation: inherit;
-  animation-delay: -0.5s;
-}
-.loader:after {
-  animation-delay: -1s;
-}
-@keyframes l2 {
-  100% {
-    box-shadow: 0 0 0 40px #0000;
-  }
-}
-/* HTML: <div class="loader"></div> */
-
 
 @media (min-width: 1921px) {
   .slider-wrapper .slide-left-button,
