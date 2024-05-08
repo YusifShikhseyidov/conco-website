@@ -142,7 +142,7 @@
   padding: 2px;
 }
 
-
+/* ******************** screen sizes styles **************************** */
 @media (min-width: 1921px) {
   .slider-wrapper .slide-left-button,
   .slider-wrapper .slide-right-button {
@@ -150,7 +150,7 @@
   }
 
   .slider {
-    height: 91.6dvh;
+    height: 89dvh;
   }
 }
 
@@ -161,7 +161,7 @@
   }
 
   .slider-wrapper .slider-card .card-title {
-    max-width: 40rem;
+    max-width: 55rem;
   }
 
   .slider-wrapper .slider-card .card-title::after{
@@ -176,7 +176,7 @@
   }
 
   .slider-wrapper .slider-card .card-title {
-    max-width: 35rem;
+    max-width: 45rem;
   }
   .slider-wrapper .slider-card .card-title::after{
     display: none;

@@ -5,7 +5,8 @@ import useFetch from "../hooks/useFetch";
 // useTranslation is needed for static content translation made using i18n
 import { useTranslation } from "react-i18next";
 
-
+// loading animation
+import 'ldrs/trefoil'
 
 export default function Sponsors() {
   const {data, loading} = useFetch("/orderers?populate=*")
@@ -20,7 +21,7 @@ export default function Sponsors() {
         <h1 className="marquee-title">{t('sifariscilerpagetitle')}</h1>
 
       <div className="marquee-container">
-        {loading && <div className="loader"></div>}
+        {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b"></l-trefoil>}
         {isTabletOrMobile ? (
           <div className="logos-container">
             {!loading && data && data?.map((logo)=>(

@@ -21,8 +21,8 @@
 }
 
 .about-page_section-2 .about-page_main-services .service-container {
-  width: 15rem;
-  height: 19rem;
+  width: 13rem;
+  height: 17rem;
 }
 
 .service-container .service-logo-container {
@@ -56,6 +56,21 @@
 
 .service-container .service-name-container h3 {
   cursor: default;
+}
+
+/* *************************** screen sizes styles ***************************** */
+@media (min-width: 1921px){
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 13rem;
+    height: 17rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1919px){
+  .about-page_section-2 .about-page_main-services .service-container {
+    width: 13rem;
+    height: 17rem;
+  }
 }
 
 @media (max-width: 1440px){

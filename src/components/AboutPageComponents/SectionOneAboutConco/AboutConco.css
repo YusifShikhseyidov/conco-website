@@ -3,12 +3,12 @@
   display: flex;
   gap: 2rem;
   justify-content: space-evenly;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .about-page_section-1 .about-page_company-cover{
-  width: 45rem;
-  height: 60rem;
+  width: 40rem;
+  height: 53rem;
 }
 
 .about-page_section-1 .about-page_company-cover img{
@@ -87,9 +87,49 @@
   margin: 0 auto 1rem;
 }
 
-@media (max-width: 1440px){
+/* *******************screen sizes**************************** */
+@media (min-width: 1921px){
+  .about-page_section-1 {
+    margin-top: 3rem;
+  }
+
   .about-page_section-1 .about-page_company-cover{
-    height: 55rem;
+    width: 40rem;
+    height: 53rem;
+  }
+
+  .about-page_section-1 .about-page_our-philosophy_2{
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1919px){
+  .about-page_section-1 {
+    margin-top: 3rem;
+  }
+
+  .about-page_section-1 .about-page_company-cover{
+    width: 40rem;
+    height: 53rem;
+  }
+
+  .about-page_section-1 .about-page_our-philosophy_2{
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 1440px){
+  .about-page_section-1 {
+    margin-top: 2rem;
+  }
+
+  .about-page_section-1 .about-page_company-cover{
+    width: 37rem;
+    height: 52rem;
+  }
+
+  .about-page_section-1 .about-page_about-conco {
+    font-size: 17px;
   }
 }
 
@@ -97,6 +137,10 @@
   .about-page_section-1 {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-page_section-1 .about_page-about_us-keeper{
+    margin-bottom: 1.5rem;
   }
 }
 

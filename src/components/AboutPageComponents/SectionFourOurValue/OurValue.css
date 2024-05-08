@@ -15,7 +15,7 @@
   grid-template-columns: repeat(auto-fit, 20rem);
   place-content: center;
   margin-top: 8rem;
-  column-gap: 2rem;
+  gap: 2rem;
 }
 
 .about-page_section-4 .about-page_our-value .our-value-container {
@@ -97,5 +97,11 @@
     -webkit-transform: perspective(1000px) translateZ(0);
             transform: perspective(1000px) translateZ(0);
     opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px){
+  .about-page_section-4 .about-page_our-value {
+    grid-template-columns: repeat(2, 20rem);
   }
 }

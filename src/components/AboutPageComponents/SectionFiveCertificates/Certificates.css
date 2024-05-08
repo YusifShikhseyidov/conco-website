@@ -15,7 +15,7 @@
 }
 
 .certificates-section .certificate-container{
-  width: 16%;
+  width: 23%;
 }
 
 .certificates-section .certificate-container img{
@@ -39,7 +39,20 @@
   }
 }
 
-/* different screen sizes styles */
+/* *****************************different screen sizes styles***************************** */
+@media (min-width: 1025px) and (max-width: 1600px){
+  .certificates-section .certificates-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    place-items: center;
+  }
+
+  .certificates-section .certificate-container{
+    width: 80%;
+  }
+}
+
 @media (max-width: 1024px){
 
   .certificates-section h2{

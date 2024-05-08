@@ -1,17 +1,16 @@
 .about-page {
   width: 100%;
   min-height: auto;
-  margin-bottom: 5rem;
 }
 
 .about-page h1 {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   text-align: center;
   text-transform: uppercase;
 }
 
-.about-page .line-separator {
-  border: 1px solid rgba(170, 170, 170, 0.24);
-  margin: 3rem 0;
+@media (min-width: 1440px) and (max-width: 1919px){
+  .about-page h1 {
+    margin: 0 0 1rem 0;
+  }
 }
-
