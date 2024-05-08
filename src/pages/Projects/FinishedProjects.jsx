@@ -26,7 +26,7 @@ export default function FinishedProjects() {
       </header>
 
       <main className="projects-page_main-content">
-        {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b"></l-trefoil>}
+        {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b" style={{display: "block", margin: "0 auto"}}></l-trefoil>}
         {!loading && data && sortedData?.map((obj)=>{
           const imgs = obj.attributes.finished_project_imgs.data.map((img)=>img.attributes.url)
           return (
