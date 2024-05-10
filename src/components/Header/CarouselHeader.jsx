@@ -50,7 +50,7 @@ export default function CarouselHeader() {
 
   return (
     <div className="slider">
-      {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b" style={{display: "block", margin: "25% auto 0"}}></l-trefoil>}
+      {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b" style={{display: "block", margin: "25vh auto 0"}}></l-trefoil>}
       {error && <div>error...</div>}
       <div className="slider-wrapper">
         {/* map data to slides */}

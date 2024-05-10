@@ -93,7 +93,7 @@
   position:fixed;
   background: white;
   width: 60%;
-  height: 45rem;
+  height: 80vh;
   top:50%;
   left:50%;
   z-index: 10;
@@ -199,9 +199,15 @@
   height: 100%;
 }
 
-/* screen size styles */
+/* *****************************screen size styles***************************** */
 @media (max-width: 500px) {
   .single-project_single-image_wrapper{
     padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px){
+  .single-project_text-element {
+    font-size: 22px;
   }
 }

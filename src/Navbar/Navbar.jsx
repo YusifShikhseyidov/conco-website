@@ -48,7 +48,7 @@ function Header() {
         <nav className="nav-area">
           <div className="logo-wrapper">
             <Link to="/">
-              <img src={conco_logo} alt="conco_logo" width={100} />
+              <img src={conco_logo} alt="conco_logo" />
             </Link>
           </div>
 
