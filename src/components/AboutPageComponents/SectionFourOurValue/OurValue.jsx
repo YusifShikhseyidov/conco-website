@@ -17,7 +17,7 @@ export default function OurValue() {
   const title = t('ourvaluepagetitle');
 
   return (
-    <div style={{ marginTop: "6rem" }}>
+    <div className="about-page_section-4-wrapper">
       <section className="about-page_section-4">
         <h2>{title}</h2>
 
