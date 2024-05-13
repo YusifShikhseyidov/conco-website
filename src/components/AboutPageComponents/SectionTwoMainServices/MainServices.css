@@ -110,24 +110,18 @@
   }
 
   .about-page_section-2 .about-page_main-services .service-container {
-    display: flex;
-    gap: 10px;
     width: 11rem;
     height: 9rem;
   }
 
   .service-container .service-name-container {
     font-size: 12px;
-    height: unset;
-  }
-
-  .service-container .service-logo-container {
-    height: unset;
+    padding: 0 5px;
   }
 
   .service-container .service-logo-container img {
-    width: 97%;
-    height: 60%;
+    width: 52%;
+    height: 75%;
   }
 }
 

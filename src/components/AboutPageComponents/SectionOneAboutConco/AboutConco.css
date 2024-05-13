@@ -94,13 +94,16 @@
 
 .about-page_section-1 hr{
   border: 1px solid #0000000f;
-  margin: 0 auto 1rem;
 }
 
 /* *******************screen sizes**************************** */
 @media (min-width: 1921px){
   .about-page_section-1 {
     margin-top: 3rem;
+  }
+
+  .about-page_section-1 .about-page_about-conco {
+    font-size: 20px;
   }
 
   .about-page_section-1 .about-page_company-cover{
