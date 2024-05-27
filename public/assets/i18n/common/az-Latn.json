@@ -23,6 +23,10 @@
         {
           "title": "SERTİFİKATLAR",
           "url": "about/certificates"
+        },
+        {
+          "title": "LİSENZİYALAR",
+          "url": "about/licences"
         }
       ]
     },

@@ -23,6 +23,10 @@
         {
           "title": "СЕРТИФИКАТЫ",
           "url": "about/certificates"
+        },
+        {
+          "title": "ЛИЦЕНЗИИ",
+          "url": "about/licences"
         }
       ]
     },

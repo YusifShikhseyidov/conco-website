@@ -20,6 +20,7 @@ import Sponsors from "./components/Sponsors/Sponsors";
 import AboutConco from "./components/AboutPageComponents/SectionOneAboutConco/AboutConco";
 import OurValue from "./components/AboutPageComponents/SectionFourOurValue/OurValue";
 import Certificates from "./components/AboutPageComponents/SectionFiveCertificates/Certificates"
+import Licences from "./components/AboutPageComponents/SectionSixLicences/Licences"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +39,10 @@ const router = createBrowserRouter(
         <Route
           path="certificates"
           element={<Certificates />}
+        />
+        <Route
+          path="licences"
+          element={<Licences />}
         />
       </Route>
       <Route path="projects" element={<Projects />}>
