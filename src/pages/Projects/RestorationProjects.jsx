@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer/Footer";
 import useFetch from "../../components/hooks/useFetch";
 // useLocale is needed for translation that is coming from backend
 import { useLocale } from "../../components/LocaleContext";
