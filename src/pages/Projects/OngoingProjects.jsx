@@ -25,9 +25,6 @@ import { useLocale } from "../../components/LocaleContext";
 // useTranslation is needed for static content translation made using i18n
 import { useTranslation } from "react-i18next";
 
-// loading animation
-import 'ldrs/trefoil'
-
 export default function OngoingProjects() {
   const {locale} = useLocale()
   const {data, loading} = useFetch(`/ongoing-projects?locale=${locale}&populate=*`)
@@ -48,7 +45,7 @@ export default function OngoingProjects() {
       </header>
       <main className="projects-page_main-content">
 
-        {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b" style={{display: "block", margin: "0 auto"}}></l-trefoil>}
+        {loading && <div className="loader"></div>}
         {!loading && data.length > 0 && sortedData?.map((obj)=>{
           const imgs = obj.attributes.ongoing_project_imgs.data.map((img)=>img.attributes.url)
           return (
@@ -96,7 +93,6 @@ export default function OngoingProjects() {
           </>
         )}
       </main>
-      <Footer />
     </>
   );
 }

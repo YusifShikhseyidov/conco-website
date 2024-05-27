@@ -3,8 +3,6 @@ import MainServices from "../SectionTwoMainServices/MainServices";
 import useFetch from "../../hooks/useFetch";
 // styles
 import "./AboutConco.css"
-// loading animation
-import 'ldrs/trefoil'
 
 // import react-awesome-reveal Zoom effect
 import { Zoom } from "react-awesome-reveal";
@@ -29,7 +27,7 @@ export default function AboutConco() {
 
   return (
     <section className="about-page_section-1">
-      {loading && <l-trefoil size="70" stroke="6" stroke-length="0.15" bg-opacity="0.1" speed="1.4" color="#01579b"></l-trefoil>}
+      {loading && <div className="loader"></div>}
       {!loading && data && (
         <>
           {data.map((aboutuscoverimg)=>(
