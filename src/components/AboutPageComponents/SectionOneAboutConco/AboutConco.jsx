@@ -15,7 +15,7 @@ export default function AboutConco() {
   const {locale} = useLocale()
 
   // fetch data using useFetch hook for relevant collection-type
-  const {data,loading} = useFetch(`/about-us-collection-types?locale=${locale}&populate=*`)
+  const {data,loading} = useFetch(`/about-us-cover-img?locale=${locale}&populate=*`)
 
   // translate static content
   const {t} = useTranslation("about", {useSuspense: true})
@@ -32,7 +32,7 @@ export default function AboutConco() {
         <>
           {data.map((aboutuscoverimg)=>(
             <div className="about-page_company-cover" key={aboutuscoverimg.id}>
-              <img src={aboutuscoverimg.attributes.conco_about_us_cover_img.data.attributes.url} loading="lazy" alt="company-cover" />
+              <img src={aboutuscoverimg.attributes.conco_cover_img.data.attributes.url} loading="lazy" alt="company-cover" />
             </div>
 
           ))}
@@ -62,7 +62,3 @@ export default function AboutConco() {
     </section>
   );
 }
-
-
-
-// Default values shown  
