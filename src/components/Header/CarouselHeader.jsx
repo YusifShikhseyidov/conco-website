@@ -18,6 +18,8 @@ export default function CarouselHeader() {
   const {data, loading, error} = useFetch(`slider-images-headings?locale=${locale}&populate=*`)
   const sortedData = [...data].sort((a,b)=> a.id - b.id)
 
+  console.log(sortedData)
+
   // active slide
   const [activeIndex, setActiveIndex] = useState(0)
 

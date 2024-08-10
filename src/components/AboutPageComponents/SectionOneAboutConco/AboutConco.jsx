@@ -13,9 +13,11 @@ import { useTranslation } from "react-i18next";
 
 export default function AboutConco() {
   const {locale} = useLocale()
-
+  
   // fetch data using useFetch hook for relevant collection-type
-  const {data,loading} = useFetch(`/about-us-cover-img?locale=${locale}&populate=*`)
+  const {data,loading} = useFetch(`/about-us-collection-types?locale=${locale}&populate=*`)
+  
+  console.log(data)
 
   // translate static content
   const {t} = useTranslation("about", {useSuspense: true})
@@ -30,16 +32,16 @@ export default function AboutConco() {
       {loading && <div className="loader"></div>}
       {!loading && data && (
         <>
-          {data.map((aboutuscoverimg)=>(
+          {data?.map((aboutuscoverimg)=>(
             <div className="about-page_company-cover" key={aboutuscoverimg.id}>
-              <img src={aboutuscoverimg.attributes.conco_cover_img.data.attributes.url} loading="lazy" alt="company-cover" />
+              <img src={aboutuscoverimg.attributes.conco_about_us_cover_img.data.attributes.url} loading="lazy" alt="company-cover" />
             </div>
-
           ))}
+
           <div className="about_page-about_us-keeper">
             <h1 className="about-page_title">{t('aboutpagetitle')}</h1>
 
-            {data.map((aboutus)=>(
+            {data?.map((aboutus)=>(
               <p className="about-page_about-conco" key={aboutus.id}>
                 {aboutus.attributes.conco_about_us}
               </p>
