@@ -14,6 +14,7 @@
   height: 100%;
   margin: 0 auto;
   display: flex;
+  overflow: hidden;
 }
 
 .slider-wrapper .slider-card {
@@ -36,46 +37,42 @@
 
 .slider-wrapper .slider-card .card-overlay{
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   padding: 2rem;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-start;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 96%);
 }
 
 .slider-wrapper .slider-card .card-title {
-  position: absolute;
-  left: 7rem;
+  width: 60%;
+  margin-inline-start: 5.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-break: anywhere;
+  line-height: 0.9;
+  text-transform: uppercase;
+  display: inline;
   color: #fff;
   z-index: 0;
 }
 
-.slider-wrapper .slider-card .card-title .line{
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  z-index: -1;
-  transform: translateY(-10px);
-  background-color: var(--swiper-overall-color);
-  transition: .5s;
+.slider-wrapper .slider-card .card-title.animate{
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.slider-wrapper .slider-card .card-title:hover .line{
-  height: 20px;
-  transform: translateY(-20px);
-}
-
-.slider-wrapper .slider-card .card-title.animate .line{
-  animation: bottomLine 3s ease-in-out infinite forwards;
-}
-
-@keyframes bottomLine {
-  0%{
-    width: 0;
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
   }
-  100%{
-    width: 100%;
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -205,7 +202,7 @@
 
 @media (min-width: 1441px) and (max-width: 1600px){
   .slider {
-    height: 89.3dvh;
+    height: 91.5dvh;
   }
 }
 
@@ -223,7 +220,7 @@
 
 @media (min-width: 1281px) and (max-width: 1360px){
   .slider {
-    height: 88.8dvh;
+    height: calc(100vh - 71.7px);
   }
 }
 
@@ -252,8 +249,14 @@
 @media (max-width: 1440px) {
 
   .slider-wrapper .slider-card .card-title {
-    bottom: 7rem;
+    margin-block-end: 4rem;
     font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .slider-wrapper .carousel-pagination {
+    right: 9rem;
   }
 }
 
@@ -270,7 +273,7 @@
 
 @media (min-width: 400px) and (max-width: 768px) {
   .slider {
-    height: 85dvh;
+    height: calc(100vh - 71.7px);
   }
 }
 
@@ -278,8 +281,8 @@
 
   .slider-wrapper .slider-card .card-title {
     max-width: 14rem;
-    font-size: 25px;
-    left: 6rem;
+    font-size: 20px;
+    margin-block-end: 3rem;
   }
 
   .slider-wrapper .carousel-pagination{

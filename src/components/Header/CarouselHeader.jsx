@@ -58,10 +58,9 @@ export default function CarouselHeader() {
           <div className={index===activeIndex ? 'slider-card slider-card_active' : 'slider-card'} key={obj.id}>
             <div className="slider-image" style={{backgroundImage: `url(${obj.attributes.slider_img.data[0].attributes.url})`}}></div>
             <div className="card-overlay">
-              <h1 className={`card-title ${animate ? 'animate' : ''}`}>
+              <p className={`card-title ${animate ? 'animate' : ''}`}>
                 {obj.attributes.slider_heading}
-                <div className="line" />
-              </h1>
+              </p>
             </div>
           </div>
         ))}
