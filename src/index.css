@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root {
-  --swiper-pagination-color: #01579b;
-  --swiper-theme-color: #01579b;
-  --swiper-pagination-bullet-inactive-opacity: 0.5;
-  --swiper-pagination-bullet-inactive-color: #fff;
-}
-
 * {
   margin: 0;
   padding: 0;
