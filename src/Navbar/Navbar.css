@@ -50,7 +50,7 @@
   transition: all 0.3s;
 }
 
-.menu-items .dropdowm li {
+.menu-items .dropdowm button {
   display: block;
   color: inherit;
   font-size: inherit;
@@ -62,25 +62,25 @@
   transition: all 0.3s;
 }
 
-.menu-items li.isActive{
+.menu-items button.isActive{
   background-color: var(--menu-items-active-state-bg);
   border-radius: 4px;
 }
 
 
 .menu-items > a,
-.menu-items .dropdowm > li {
+.menu-items .dropdowm > button {
   text-align: left;
   padding: 0.7rem 1rem;
 }
 
-.menu-items .dropdowm > li{
+.menu-items .dropdowm > button{
   display: flex;
   align-items: center;
 }
 
 .menu-items a:hover,
-.menu-items li:hover,
+.menu-items button:hover,
 .menu-items .active {
   background-color: var(--menu-items-active-state-bg);
   color: #fff;

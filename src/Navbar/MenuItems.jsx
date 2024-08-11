@@ -31,8 +31,8 @@ export default function MenuItems({ navigationLinks}) {
       
       {/* if any of the links has dropdown links */}
       {navigationLinks.subLinks ? (
-        <ul className="dropdowm" ref={wrapperRef}>
-          <li
+        <div className="dropdowm" ref={wrapperRef}>
+          <button
             className={open ? "isActive" : ""}
             aria-haspopup="menu"
             aria-expanded={open ? "true" : "false"}
@@ -43,7 +43,7 @@ export default function MenuItems({ navigationLinks}) {
           >
             {navigationLinks.title}{" "}
             <IoIosArrowDown className={open ? "menuIsActivated" : "menuIsDeactivated"}/>
-          </li>
+          </button>
             {open && (
               <ul className="dropdown-nav-subelements">
                 {navigationLinks?.subLinks &&
@@ -56,7 +56,7 @@ export default function MenuItems({ navigationLinks}) {
                   ))}
               </ul>
             )}
-        </ul>
+        </div>
       ) : (
         // otherwise just a navbar link
         <NavLink to={navigationLinks.url}>{navigationLinks.title}</NavLink>
