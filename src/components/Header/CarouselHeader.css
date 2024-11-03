@@ -50,8 +50,8 @@
   margin-inline-start: 5.5rem;
   font-size: 1.5rem;
   font-weight: 700;
-  line-break: anywhere;
-  line-height: 0.9;
+  word-spacing: 2px;
+  line-height: 1.4;
   text-transform: uppercase;
   display: inline;
   color: #fff;
