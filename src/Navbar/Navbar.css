@@ -77,6 +77,7 @@
 .menu-items .dropdowm > button{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .menu-items a:hover,
